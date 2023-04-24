@@ -1,0 +1,3 @@
+source: https://www.onlinewebfonts.com/icon/426334
+
+svg generated with bitmap trace on inkscape

@@ -1,0 +1,2 @@
+source: https://www.svgrepo.com/svg/506517/linkedin
+licence: mit

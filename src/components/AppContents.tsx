@@ -11,6 +11,7 @@ export const AppContents = (appConfig: AppConfig) => {
             key={'page-' + section.id}
             id={section.id}
             title={section.title}
+            description={section.description}
             backgroundImage={section.backgroundImage}
             portfolioPageItems={section.portfolioPageItems}
           />

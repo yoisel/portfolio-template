@@ -7,10 +7,13 @@ interface StyledSectionProps extends GridProps {
 }
 
 export const StyledSection = styled(Grid)<StyledSectionProps>(({ backgroundImage }) => ({
+  paddingTop: '24px',
   paddingBottom: '48px',
   backgroundSize: 'cover',
-  backgroundImage: `url(${backgroundImage})`,
-  scrollMarginTop: '64px' /* required to account for our sticky header when scrolling */
+  /* making the background image opaque without affecting the rest of the contents */
+  background: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(${backgroundImage});`,
+  /* required to account for our sticky header when scrolling */
+  scrollMarginTop: '64px'
 }));
 
 const SideImage = styled(Box)<{
@@ -66,19 +69,21 @@ const PageItem = ({
     </>
   );
 
+  const styles = { style: { paddingTop: '30px' } };
+
   return (
     <>
       {image ? (
         <>
-          <Grid item xs={12} md={4} key={parentId + '-image-' + index}>
+          <Grid item xs={12} md={4} key={parentId + '-image-' + index} {...styles}>
             <SideImage backgroundImage={image} backgroundColor={backgroundColor} />
           </Grid>
-          <Grid item xs={12} md={8} key={parentId + '-text-' + index}>
+          <Grid item xs={12} md={8} key={parentId + '-text-' + index} {...styles}>
             {textContents}
           </Grid>
         </>
       ) : (
-        <Grid item xs={12} md={12} key={parentId + '-text-' + index}>
+        <Grid item xs={12} md={12} key={parentId + '-text-' + index} {...styles}>
           {textContents}
         </Grid>
       )}
@@ -86,12 +91,15 @@ const PageItem = ({
   );
 };
 
-export const PortfolioPage = ({ id, title, backgroundImage, portfolioPageItems }: PortfolioSection) => {
+export const PortfolioPage = ({ id, title, description, backgroundImage, portfolioPageItems }: PortfolioSection) => {
   return (
     <StyledSection id={id} container spacing={3} backgroundImage={backgroundImage || ''}>
       <Grid item xs={12} md={12}>
         <Typography variant='h4' component='h4'>
           {title}
+        </Typography>
+        <Typography variant='h6' component='h6'>
+          {description}
         </Typography>
       </Grid>
       {portfolioPageItems &&

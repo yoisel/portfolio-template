@@ -3,7 +3,7 @@ import { AppConfig } from './AppData.interface';
 
 // json-like object for app configuration
 export const appConfig: AppConfig = {
-  title: 'Fulano Mengano',
+  title: 'Jhon Snow\'s Portfolio',
   avatarImage: DefaultImages.Avatar,
   social: {
     github: 'https://github.com/random',
@@ -72,6 +72,7 @@ export const appConfig: AppConfig = {
     {
       id: 'projects',
       title: 'Projects',
+      description: 'Here are some of my projects',
       backgroundImage: DefaultImages.SignalsDark,
       portfolioPageItems: [
         {

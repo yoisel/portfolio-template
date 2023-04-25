@@ -12,6 +12,7 @@ export interface PortfolioPageItem {
 export interface PortfolioSection {
   id: string;
   title: string;
+  description?: string;
   backgroundImage?: string;
   portfolioPageItems?: PortfolioPageItem[];
 }

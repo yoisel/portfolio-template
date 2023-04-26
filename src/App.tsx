@@ -1,7 +1,7 @@
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import { useEffectOnce } from 'usehooks-ts';
 
-import { themeOptions } from './themes/grayscale';
+import { themeOptions } from './themes/dark-blue';
 import { AppHeader } from './components/AppHeader';
 import { AppContents } from './components/AppContents';
 import { appConfig } from './model/AppData';

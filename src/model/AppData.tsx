@@ -3,12 +3,13 @@ import { AppConfig } from './AppData.interface';
 
 // json-like object for app configuration
 export const appConfig: AppConfig = {
-  title: 'Jhon Snow\'s Portfolio',
+  title: 'Jane Snow\'s Portfolio',
   avatarImage: DefaultImages.Avatar,
   social: {
     github: 'https://github.com/random',
     linkedin: 'https://www.linkedin.com/in/random/',
-    stackoverflow: 'https://stackoverflow.com/users/000000/random'
+    stackoverflow: 'https://stackoverflow.com/users/000000/random',
+    facebook: 'https://facebook.com/random/'
   },
   sections: [
     {

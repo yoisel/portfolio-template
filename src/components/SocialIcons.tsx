@@ -2,6 +2,7 @@ import { IconButton, SvgIcon } from '@mui/material';
 import { ReactComponent as StackoverflowIcon } from '../assets/social/stackoverflow.svg';
 import { ReactComponent as GithubIcon } from '../assets/social/github.svg';
 import { ReactComponent as LinkedinIcon } from '../assets/social/linkedin.svg';
+import { ReactComponent as FacebookIcon } from '../assets/social/facebook.svg';
 import { SocialLinks } from '../model/AppData.interface';
 
 export const SocialIcons = (props: SocialLinks) => (
@@ -19,6 +20,11 @@ export const SocialIcons = (props: SocialLinks) => (
     {props.linkedin && (
       <IconButton color='default' href={props.linkedin} target='_blank'>
         <SvgIcon component={LinkedinIcon} inheritViewBox />
+      </IconButton>
+    )}
+    {props.facebook && (
+      <IconButton color='default' href={props.facebook} target='_blank'>
+        <SvgIcon component={FacebookIcon} inheritViewBox />
       </IconButton>
     )}
   </div>

@@ -32,6 +32,11 @@ export interface SocialLinks {
    * Link to a github profile
    */
   github?: string;
+
+  /**
+   * Link to a facebook profile
+   */
+  facebook?: string;
 }
 
 export interface AppHeaderConfig {

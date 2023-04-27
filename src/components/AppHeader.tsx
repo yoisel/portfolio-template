@@ -40,7 +40,7 @@ export const AppHeader = (props: AppHeaderConfig) => {
   return (
     <AppBar position='sticky'>
       <Toolbar>
-        <div style={{ flexGrow: 1, display: 'flex', gap: '8px' }}>
+        <div style={{ flexGrow: 1, display: 'flex', gap: '8px', alignItems: 'center' }}>
           <Avatar alt='Picture of Fulano de Tal' src={props.avatarImage} />
           <Typography variant='h6'>{props.title}</Typography>
           <SocialIcons {...props.social} />

@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.b02f0842.css",
-    "main.js": "/static/js/main.af253af0.js",
+    "main.js": "/static/js/main.f40cbaac.js",
     "static/js/787.fbf0fd7a.chunk.js": "/static/js/787.fbf0fd7a.chunk.js",
-    "static/js/main.af253af0.js.map": "/static/js/main.af253af0.js.map",
+    "static/js/main.f40cbaac.js.map": "/static/js/main.f40cbaac.js.map",
     "static/media/math.jpg": "/static/media/math.503695ab26291e9e81b6.jpg",
     "static/media/signals-dark.jpg": "/static/media/signals-dark.7fcb905bbe7834e77ecc.jpg",
     "static/media/math-dark-1.jpg": "/static/media/math-dark-1.bcce2dcf1ad5bbd039af.jpg",
@@ -18,13 +18,13 @@
     "static/media/github.svg": "/static/media/github.b28a8031836582cfd590ce509b0f3e98.svg",
     "static/media/stackoverflow.svg": "/static/media/stackoverflow.9e5b305d11ae78cca34779aaa6109ffd.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.038e9d46b9880004e87539bcae1ef824.svg",
-    "static/js/main.af253af0.js.LICENSE.txt": "/static/js/main.af253af0.js.LICENSE.txt",
+    "static/js/main.f40cbaac.js.LICENSE.txt": "/static/js/main.f40cbaac.js.LICENSE.txt",
     "static/media/facebook.svg": "/static/media/facebook.4ba0f48b291b567921670ccc467e077c.svg",
     "static/css/main.b02f0842.css.map": "/static/css/main.b02f0842.css.map",
     "787.fbf0fd7a.chunk.js.map": "/static/js/787.fbf0fd7a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b02f0842.css",
-    "static/js/main.af253af0.js"
+    "static/js/main.f40cbaac.js"
   ]
 }

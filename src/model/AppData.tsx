@@ -19,10 +19,10 @@ export const appConfig: AppConfig = {
         {
           contents: [
             `I am a Full Stack software developer with more than 15 years of experience, including a few leading teams of developers. 
-                     I am particularly conscious about security and code quality in the products I work on. 
-                     I enjoy solving problems, facing challenges and learning new technologies.`,
+             I am particularly conscious about security and code quality in the products I work on. 
+             I enjoy solving problems, facing challenges and learning new technologies.`,
             'I like biking, light jogging, science-fiction - fantasy books and films.',
-            'I learned my first programming language (Logo) at age 11, then moved into MSX Basic and Pascal by age 16. I found my passion and I have never looked back since then.',
+            'I learned my first programming language (Logo) at age 11, then moved into MSX Basic and Pascal by age 16. I found my passion in programming and I have never looked back since then.',
             'I was born in Cuba, an island in the Caribbean Sea, and I currently live in Montreal, Canada.'
           ],
           image: DefaultImages.Coffee
@@ -30,32 +30,8 @@ export const appConfig: AppConfig = {
       ]
     },
     {
-      id: 'education',
-      title: 'Education',
-      backgroundImage: DefaultImages.Universe,
-      portfolioPageItems: [
-        {
-          subTitle1: '2010 - 2011',
-          title: 'Concordia University, Montreal, Canada',
-          subTitle2: 'Master in Applied Computer Science',
-          link: 'https://www.concordia.ca/',
-          linkText: 'www.concordia.ca',
-          contents: '',
-          image: DefaultImages.Concordia
-        },
-        {
-          subTitle1: '2001-2004',
-          title: 'Havana University (Universidad de la Habana)',
-          subTitle2: 'Bachalor in Computer Science',
-          link: 'https://www.uh.cu',
-          contents: '',
-          image: DefaultImages.UH
-        }
-      ]
-    },
-    {
       id: 'experience',
-      title: 'Work Experience',
+      title: 'Recent Roles',
       backgroundImage: DefaultImages.MathDark1,
       portfolioPageItems: [
         {
@@ -92,61 +68,39 @@ export const appConfig: AppConfig = {
             '\u2022 Development of several software modules for iOS and Mac OS X.'
           ],
           image: DefaultImages.Amyuni
-        },
-        {
-          subTitle1: '2001-2009',
-          title: 'Senior Software Developer / Team Lead',
-          subTitle2: 'GMixon (remote from Cuba)',
-          link: 'https://www.gixon.com',
-          linkText: 'www.gmixon.coom',
-          contents: [
-            'Development of desktop-based client/server systems, web applications, digital audio and digital video broadcasting systems, and mobile applications.',
-            'Team leader during the development of several projects.'
-          ],
-          image: DefaultImages.Gmixon
-        },
-        {
-          subTitle1: '2005-2009',
-          title: 'Software Developer',
-          subTitle2: 'Cuban Institute of Radio and Television (ICRT)',
-          link: 'https://www.icrt.gob.cu',
-          linkText: 'www.icrt.gob.cu',
-          contents: [
-            'Development of applications that provided content management, multi-channel audio playback support, and sound effects for radio stations.',
-            'These applications were built using technologies such as C++, Delphi Win32, DirectX, .Net Framework/C#, and Postgresql. Additionally, I provided technical consulting on digital audio and video topics.'
-          ],
-          image: DefaultImages.ICRT
-        },
-        {
-          subTitle1: '2003-2005',
-          title: 'Lecturer / Teaching Assistant',
-          subTitle2: 'Havana University, Faculty of Mathematics and Computer Science',
-          link: 'https://www.uh.cu',
-          linkText: 'www.uh.cu',
-          contents: [
-            '\u2022 Lecturer on a Delphi Programming course for undergraduate students in Mathematics.',
-            '\u2022 Teaching Assistant for a course on C++ and Windows API for undergraduate students in Computer Science.',
-            '\u2022 Teaching Assistant for a course on Delphi/Pascal for undergraduate students in Biology.',
-            '\u2022 Network administration (Windows Server and Active Directory, Debian Linux).'
-          ],
-          image: DefaultImages.UH
         }
       ]
     },
     {
       id: 'projects',
-      title: 'Projects',
+      title: 'Recent Projects',
       description: 'Some examples of project where I have participated as part of a team',
       backgroundImage: DefaultImages.SignalsDark,
       portfolioPageItems: [
         {
+          title: 'Aruba Central',
+          link: 'https://www.arubanetworks.com/video/?v=Products%20and%20Solutions/aruba_next_gen_central_-1.mp4',
+          subTitle2: 'HPE Aruba Networking, Montreal, Canada',
+          contents: [
+            `Aruba Central is a cloud-based network management platform that offers centralized control and visibility
+             over Aruba networking devices and services, providing a unified interface for monitoring and configuring
+             Aruba switches, access points, and controllers across distributed locations.`,
+            `With Aruba Central, organizations can benefit from features such as network monitoring, configuration management,
+            firmware updates, role-based access control, analytics, and reporting. 
+            The cloud-based nature of Aruba Central enables easy scalability.`,
+            'Development for Aruba Central involves Typescript, React, Angular, Grapql, Kubernetes, among other toolchains.'
+          ],
+          image: DefaultImages.ArubaCNX
+        },
+        {
           title: 'Aruba OS',
-          subTitle2: 'HPE Aruba, Montreal, Canada',
+          subTitle2: 'HPE Aruba Networking, Montreal, Canada',
+          link: 'https://www.arubanetworks.com/resource/aos-10-at-a-glance',
           contents: [
             'Aruba OS is a Network Management System for HPE Aruba Access Points and Controllers.',
             'A web application is provided at each management level.',
             'Additional web applications serve as troubleshooting tools.',
-            'Development for Aruba OS involves embedded linux, ANSI C, AngularJS, Docker.'
+            'Development for Aruba OS involves Embedded Linux, ANSI C, AngularJS, Docker, among other toolchains.'
           ],
           image: DefaultImages.AOS
         },
@@ -155,23 +109,46 @@ export const appConfig: AppConfig = {
           subTitle2: 'Amyuni Technologies, Montreal, Canada',
           contents:
             'Amyuni PDF Converter is a software tool that allows users to create and edit digital documents such as PDF, PostScript or XPS. It is composed by a Microsoft Certified virtual printer driver that developers can use and control from a Windows application. It was implemented in a mix of C and C++',
-          image: DefaultImages.AmyuniPdfConverter
+          image: DefaultImages.AmyuniPdfConverter2
         },
         {
-          title: 'NewDj',
-          subTitle2: 'GMixon, France',
-          contents: [
-            'NewDJ is a Windows application integrated to DJ consoles for creating audio mix and applying effects.',
-            ' It was implemented using Delphi, C++ and DirectSound'
-          ],
-          image: DefaultImages.NewDJ
-        },
-        {
-          title: 'RadioSys',
-          subTitle2: 'Cuban Institute of Radio and Television, Havana, Cuba',
+          title: 'Amyuni PDF Creator',
+          subTitle2: 'Amyuni Technologies, Montreal, Canada',
           contents:
-            'RadioSys is a Windows application for radio stations with content management, multi-channel support and sound effects. The client component (player) was implemented using C++ and Delphi, DirectX. Server-side application was implemented using .Net Framework/C# and PostgreSQL.',
-          image: DefaultImages.RadioSys
+            'Amyuni PDF Creator is a Windows-based software library that allows developers to generate, edit, display and print PDF documents programmatically. This library provides developers with control over document formatting, page layouts, text and image insertion, watermarking, encryption, and digital signature capabilities, supporting a wide range of programming languages and frameworks (.net, C++, COM).',
+          image: DefaultImages.AmyuniPdfCreator
+        },
+        {
+          title: 'Web portfolio template',
+          link: 'https://github.com/yoisel/portfolio-template',
+          subTitle2: 'Open Source',
+          contents:
+            'An unencumbered portfolio template based on React and Mui. It provides a responsive design and it is offered with MIT open source license',
+          image: DefaultImages.PortfolioTemplate
+        }
+      ]
+    },
+    {
+      id: 'education',
+      title: 'Education',
+      backgroundImage: DefaultImages.Universe,
+      portfolioPageItems: [
+        {
+          subTitle1: '2010 - 2011',
+          title: 'Concordia University, Montreal, Canada',
+          subTitle2: 'Master in Applied Computer Science',
+          link: 'https://www.concordia.ca/',
+          linkText: 'www.concordia.ca',
+          contents: '',
+          image: DefaultImages.Concordia
+        },
+        {
+          subTitle1: '2001-2004',
+          title: 'Havana University (Universidad de la Habana)',
+          subTitle2: 'Bachalor in Computer Science',
+          link: 'https://www.uh.cu',
+          contents: '',
+          image: DefaultImages.UH
         }
       ]
     }

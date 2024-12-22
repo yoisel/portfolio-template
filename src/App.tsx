@@ -11,7 +11,7 @@ const theme = createTheme(themeOptions);
 const App = () => {
   useEffectOnce(() => {
     const docTitle = document.getElementById('app-title') || {
-      textContent: ''
+      textContent: 'Jane Snow\'s Portfolio'
     };
     docTitle.textContent = appConfig.title;
   });

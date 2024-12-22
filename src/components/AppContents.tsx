@@ -5,10 +5,10 @@ import { PortfolioPage } from './PortfolioPage';
 export const AppContents = (appConfig: AppConfig) => {
   return (
     <Container maxWidth='lg' style={{ paddingTop: '30px' }}>
-      {appConfig.sections?.map((section) => {
+      {appConfig.sections?.map((section, index) => {
         return (
           <PortfolioPage
-            key={'page-' + section.id}
+            key={index}
             id={section.id}
             title={section.title}
             description={section.description}

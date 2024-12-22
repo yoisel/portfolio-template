@@ -30,7 +30,8 @@
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
     "lint": "eslint ./src",
-    "prettier": "prettier --write ./src"
+    "prettier": "prettier --write ./src",
+    "compile": "tsc --noEmit"  
   },
   "eslintConfig": {
     "extends": [

@@ -6,7 +6,9 @@ interface StyledSectionProps extends GridProps {
   backgroundImage?: string;
 }
 
-export const StyledSection = styled(Grid)<StyledSectionProps>(({ backgroundImage }) => ({
+export const StyledSection = styled(Grid,  {
+  shouldForwardProp: (prop) => prop !== 'backgroundImage'
+})<StyledSectionProps>(({ backgroundImage }) => ({
   paddingTop: '24px',
   paddingBottom: '48px',
   backgroundSize: 'cover',
@@ -16,7 +18,9 @@ export const StyledSection = styled(Grid)<StyledSectionProps>(({ backgroundImage
   scrollMarginTop: '64px'
 }));
 
-const SideImage = styled(Box)<{
+const SideImage = styled(Box, {
+  shouldForwardProp: (prop) => prop !== 'backgroundImage' && prop !== 'backgroundColor'
+})<{
   backgroundImage?: string;
   backgroundColor?: string;
 }>(({ backgroundImage, backgroundColor }) => ({
@@ -24,7 +28,7 @@ const SideImage = styled(Box)<{
   backgroundSize: 'contain',
   backgroundRepeat: 'no-repeat',
   backgroundImage: `url(${backgroundImage})`,
-  backgroudColor: `${backgroundColor}`
+  backgroundColor: `${backgroundColor}`
 }));
 
 type PageItemProps = PortfolioPageItem & { index: number; parentId: string };
@@ -60,8 +64,8 @@ const PageItem = ({
         </Link>
       )}
       <div style={{ paddingTop: '10px' }}>
-        {_contents.map((paragraph) => (
-          <Typography component='p' paddingTop={'10px'}>
+        {_contents.map((paragraph, index) => (
+          <Typography key={index} component='p' paddingTop={'10px'}>
             {paragraph}
           </Typography>
         ))}
@@ -103,7 +107,7 @@ export const PortfolioPage = ({ id, title, description, backgroundImage, portfol
         </Typography>
       </Grid>
       {portfolioPageItems &&
-        portfolioPageItems.map((item, index) => <PageItem {...item} index={index} parentId={id} />)}
+        portfolioPageItems.map((item, index) => <PageItem key={index} {...item} index={index} parentId={id} />)}
     </StyledSection>
   );
 };

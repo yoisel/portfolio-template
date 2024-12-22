@@ -19,7 +19,6 @@ export const AppHeader = (props: AppHeaderConfig) => {
   const theme = useTheme();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
-  console.log(isSmallScreen);
 
   const handleMenuButtonClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -65,9 +64,9 @@ export const AppHeader = (props: AppHeaderConfig) => {
           onClose={handleMenuClose}
           MenuListProps={{ 'aria-labelledby': 'basic-button' }}
         >
-          {props.sections?.map((section) => (
-            <MenuItem onClick={() => scrollToSection(section.id)}>{section.title}</MenuItem>
-          ))}
+          {props.sections?.map((section) => {
+            return (section?.id && section?.title) && <MenuItem key={section?.id} onClick={() => scrollToSection(section.id)}>{section.title}</MenuItem>;
+          })}
         </Menu>
       </Toolbar>
     </AppBar>

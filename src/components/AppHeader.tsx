@@ -65,7 +65,14 @@ export const AppHeader = (props: AppHeaderConfig) => {
           MenuListProps={{ 'aria-labelledby': 'basic-button' }}
         >
           {props.sections?.map((section) => {
-            return (section?.id && section?.title) && <MenuItem key={section?.id} onClick={() => scrollToSection(section.id)}>{section.title}</MenuItem>;
+            return (
+              section?.id &&
+              section?.title && (
+                <MenuItem key={section?.id} onClick={() => scrollToSection(section.id)}>
+                  {section.title}
+                </MenuItem>
+              )
+            );
           })}
         </Menu>
       </Toolbar>

@@ -6,7 +6,7 @@ interface StyledSectionProps extends GridProps {
   backgroundImage?: string;
 }
 
-export const StyledSection = styled(Grid,  {
+export const StyledSection = styled(Grid, {
   shouldForwardProp: (prop) => prop !== 'backgroundImage'
 })<StyledSectionProps>(({ backgroundImage }) => ({
   paddingTop: '24px',

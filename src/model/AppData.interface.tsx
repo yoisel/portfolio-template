@@ -1,3 +1,5 @@
+import { ThemeOptions } from '@mui/material';
+
 export interface PortfolioPageItem {
   image?: string;
   title?: string;
@@ -7,6 +9,7 @@ export interface PortfolioPageItem {
   backgroundColor?: string;
   link?: string;
   linkText?: string;
+  imagePosition?: 'left' | 'right';
 }
 
 export interface PortfolioSection {
@@ -37,6 +40,8 @@ export interface SocialLinks {
    * Link to a facebook profile
    */
   facebook?: string;
+
+  instagram?: string;
 }
 
 export interface AppHeaderConfig {
@@ -59,6 +64,11 @@ export interface AppHeaderConfig {
    * List of sections of our single-page application
    */
   sections: Pick<PortfolioSection, 'id' | 'title'>[];
+
+  /**
+   * mui theme to be used
+   */
+  theme?: ThemeOptions;
 }
 
 export interface AppConfig extends AppHeaderConfig {

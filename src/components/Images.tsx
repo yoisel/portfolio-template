@@ -10,15 +10,17 @@ import education from '../assets/ai-generated/education.jpg';
 
 import avatar from '../assets/woman-face-cartoon.jpg';
 
-export class DefaultImages {
-  static MathDark2 = mathDark2;
-  static MathDark1 = mathDark1;
-  static Music = music;
-  static Education = education;
-  static Math = math;
-  static Networks = networks;
-  static Signals = signals;
-  static SignalsDark = signalsDark;
-  static Universe = universe;
-  static Avatar = avatar;
+const _Images = {
+  MathDark2: mathDark2,
+   MathDark1: mathDark1,
+   Music: music,
+   Education: education,
+   Math: math,
+   Networks: networks,
+   Signals: signals,
+   SignalsDark: signalsDark,
+   Universe: universe,
+   Avatar: avatar
 }
+
+export const Images: { [key: string]: string } & typeof _Images = _Images;

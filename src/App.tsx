@@ -1,20 +1,36 @@
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
-import { useEffectOnce } from 'usehooks-ts';
+import { useEffect, useLayoutEffect, useState } from 'react';
 
-import { themeOptions } from './themes/dark-blue';
 import { AppHeader } from './components/AppHeader';
 import { AppContents } from './components/AppContents';
-import { appConfig } from './model/AppData';
+import { darkBlueTheme } from './themes/dark-blue';
+import { AppConfig } from './model/AppData.interface';
+import { parseAppConfig } from './model/AppData';
+import appConfigJson from './config/appConfig.json';
 
-const theme = createTheme(themeOptions);
+const theme = createTheme(darkBlueTheme);
 
 const App = () => {
-  useEffectOnce(() => {
-    const docTitle = document.getElementById('app-title') || {
-      textContent: "Jane Snow's Portfolio"
+  const [appConfig, setAppConfig] = useState<AppConfig | null>(null);
+
+  useEffect(() => {
+    const fetchConfig = async () => {
+      const config = await parseAppConfig(appConfigJson);
+      setAppConfig(config);
     };
-    docTitle.textContent = appConfig.title;
-  });
+    fetchConfig();
+  }, []);
+
+  useLayoutEffect(() => {
+    const docTitle = document.getElementById('app-title');
+    if (appConfig && docTitle) {
+      docTitle.textContent = appConfig.title;
+    }
+  }, [appConfig]);
+
+  if (!appConfig) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <ThemeProvider theme={theme}>

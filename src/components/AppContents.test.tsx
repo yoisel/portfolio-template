@@ -1,10 +1,9 @@
 import React from 'react';
 import { render, RenderResult } from '@testing-library/react';
 import { AppContents } from './AppContents';
-import { AppConfig } from '../model/AppData.interface';
 
 describe('AppContents', () => {
-  const props: AppConfig = {
+  const props = {
     sections: [
       {
         id: 'section1',

@@ -1,6 +1,6 @@
 import { ThemeOptions } from '@mui/material';
 
-export const themeOptions: ThemeOptions = {
+export const darkBlueTheme: ThemeOptions = {
   palette: {
     mode: 'dark',
     primary: {
@@ -10,7 +10,7 @@ export const themeOptions: ThemeOptions = {
       main: '#2ec5d3'
     },
     background: {
-      default: '#192231',
+      default: '#192251',
       paper: '#24344d'
     }
   }

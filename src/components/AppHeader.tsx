@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   AppBar,
   Toolbar,
@@ -14,10 +13,11 @@ import {
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { SocialIcons } from './SocialIcons';
 import { AppHeaderConfig } from '../model/AppData.interface';
+import { useState } from 'react';
 
 export const AppHeader = (props: AppHeaderConfig) => {
   const theme = useTheme();
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleMenuButtonClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -51,9 +51,9 @@ export const AppHeader = (props: AppHeaderConfig) => {
         ) : (
           <div style={{ display: 'flex', flexGrow: 1, gap: '4px' }}>
             {props.sections?.map((section) => (
-              <Button key={'buttons' + section.id} variant='contained' onClick={() => scrollToSection(section.id)}>
+              <>{section?.id && section?.title && <Button key={'buttons' + section.id} variant='contained' onClick={() => scrollToSection(section.id)}>
                 {section.title}
-              </Button>
+              </Button>}</>
             ))}
           </div>
         )}

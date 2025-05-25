@@ -1,6 +1,7 @@
 import { Typography, Link, Grid, useTheme, useMediaQuery } from '@mui/material';
 import { PortfolioPageItem } from '../model/AppData.interface';
 import { SideImage } from './SideImage';
+import { Images } from './Images';
 
 type PageItemProps = PortfolioPageItem & { imagePosition?: 'left' | 'right' };
 
@@ -8,7 +9,7 @@ const styles = { style: { paddingTop: '30px' } };
 
 export const PageItem = ({
   backgroundColor,
-  image,
+  image: imageName,
   title,
   subTitle1,
   subTitle2,
@@ -21,6 +22,8 @@ export const PageItem = ({
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
   const _contents = Array.isArray(contents) ? contents : [contents];
   imagePosition = isSmallScreen ? 'left' : imagePosition;
+
+  const image = imageName ? Images[imageName] : undefined;
 
   const textContents = (
     <>

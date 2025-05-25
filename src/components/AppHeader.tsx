@@ -14,6 +14,7 @@ import { Menu as MenuIcon } from '@mui/icons-material';
 import { SocialIcons } from './SocialIcons';
 import { AppHeaderConfig, LanguageOption } from '../model/AppData.interface';
 import React, { useState } from 'react';
+import { Images } from './Images';
 
 export const AppHeader = (props: AppHeaderConfig) => {
   // Language dropdown state
@@ -44,11 +45,13 @@ export const AppHeader = (props: AppHeaderConfig) => {
     }
   };
 
+  const avatarImage = props.avatarImage ? Images[props.avatarImage] : undefined;
+
   return (
     <AppBar position='sticky'>
       <Toolbar>
         <div style={{ flexGrow: 1, display: 'flex', gap: '8px', alignItems: 'center' }}>
-          <Avatar alt='Picture of Fulano de Tal' src={props.avatarImage} />
+          <Avatar alt='Picture of Fulano de Tal' src={avatarImage} />
           <Typography variant='h6'>{props.title}</Typography>
           <SocialIcons {...props.social} />
         </div>

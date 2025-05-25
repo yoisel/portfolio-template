@@ -4,7 +4,7 @@ import { AppHeaderConfig } from '../model/AppData.interface';
 
 describe('AppHeader', () => {
   const props: AppHeaderConfig = {
-    avatarImage: 'avatar.jpg',
+    avatarImage: 'Avatar',
     title: 'App Title',
     social: {
       stackoverflow: 'https://stackoverflow.com',

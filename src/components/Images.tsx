@@ -28,36 +28,33 @@ import portfolioTemplate from '../assets/portfolio/portfolio-template.png';
 
 import avatar from '../assets/avatar-yms.jpg';
 
-// Helper function to ensure URLs have the correct public path prefix
-const withPublicUrl = (url: string) => `${process.env.PUBLIC_URL}${url}`;
-
 const _Images = {
-  MathDark2: withPublicUrl(mathDark2),
-  MathDark1: withPublicUrl(mathDark1),
-  Music: withPublicUrl(music),
-  Education: withPublicUrl(education),
-  BeachDark: withPublicUrl(beachDark),
-  Math: withPublicUrl(math),
-  Networks: withPublicUrl(networks),
-  Signals: withPublicUrl(signals),
-  SignalsDark: withPublicUrl(signalsDark),
-  Universe: withPublicUrl(universe),
-  Concordia: withPublicUrl(concordia),
-  UH: withPublicUrl(uhavana),
-  Amyuni: withPublicUrl(amyuni),
-  Gmixon: withPublicUrl(gmixon),
-  HPE: withPublicUrl(HPE),
-  ICRT: withPublicUrl(ICRT),
-  Coffee: withPublicUrl(coffee),
-  RadioSys: withPublicUrl(radiosys),
-  AOS: withPublicUrl(aos),
-  NewDJ: withPublicUrl(newdj),
-  AmyuniPdfConverter: withPublicUrl(amyuniPdf),
-  AmyuniPdfConverter2: withPublicUrl(amyuniPdf2),
-  AmyuniPdfCreator: withPublicUrl(amyuniPdfCreator),
-  ArubaCNX: withPublicUrl(arubaCnx),
-  PortfolioTemplate: withPublicUrl(portfolioTemplate),
-  Avatar: withPublicUrl(avatar)
+  MathDark2: mathDark2,
+  MathDark1: mathDark1,
+  Music: music,
+  Education: education,
+  BeachDark: beachDark,
+  Math: math,
+  Networks: networks,
+  Signals: signals,
+  SignalsDark: signalsDark,
+  Universe: universe,
+  Concordia: concordia,
+  UH: uhavana,
+  Amyuni: amyuni,
+  Gmixon: gmixon,
+  HPE: HPE,
+  ICRT: ICRT,
+  Coffee: coffee,
+  RadioSys: radiosys,
+  AOS: aos,
+  NewDJ: newdj,
+  AmyuniPdfConverter: amyuniPdf,
+  AmyuniPdfConverter2: amyuniPdf2,
+  AmyuniPdfCreator: amyuniPdfCreator,
+  ArubaCNX: arubaCnx,
+  PortfolioTemplate: portfolioTemplate,
+  Avatar: avatar
 };
 
 export const Images: { [key: string]: string } & typeof _Images = _Images;

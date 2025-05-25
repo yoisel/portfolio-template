@@ -16,12 +16,13 @@
         "portfolioPageItems": [
           {
             "contents": [
-              "I am a Full Stack software developer with more than 15 years of experience, including a few leading teams of developers. I am particularly conscious about security and code quality in the products I work on. I enjoy solving problems, facing challenges and learning new technologies.",
+              "I am a Full Stack software developer with about two decades of experience, including a few leading teams of developers. I am particularly conscious about security and code quality in the products I work on. I enjoy solving problems, facing challenges and learning new technologies.",
               "I like biking, light jogging, science-fiction - fantasy books and films.",
               "I learned my first programming language (Logo) at age 11, then moved into MSX Basic and Pascal by age 16. I found my passion in programming and I have never looked back since then.",
               "I was born in Cuba, an island in the Caribbean Sea, and I currently live in Montreal, Canada."
             ],
-            "image": "Coffee"
+            "image": "Coffee",
+            "imagePosition": "left"
           }
         ]
       },
@@ -38,6 +39,7 @@
             "linkText": "www.hpe.com",
             "contents": [
               "• Technical leading on the development of a React-based components library for Aruba Central, a cloud-based Network Management System, with a distributed team across multiple geographies.",
+              "• Member of HPE Aruba Secure Software Development team.",
               "• Development of software modules for Aruba Central and Aruba Instant On.",
               "• Development of software modules for Aruba OS, a Linux-based embedded operating system for managed wireless networks.",
               "",
@@ -46,7 +48,8 @@
               "    Docker, Angular, AngularJS, Javascript, ES6, NodeJS, Java, Linux-based Embedded Systems,",
               "    ANSI C, Network protocols, Wifi (802.11) specifications."
             ],
-            "image": "HPE"
+            "image": "HPE",
+            "imagePosition": "right"
           },
           {
             "subTitle1": "2009 - 2016",
@@ -62,7 +65,8 @@
               "• Development of a Windows Embedded CE platform with several customized software modules.",
               "• Development of several software modules for iOS and Mac OS X."
             ],
-            "image": "Amyuni"
+            "image": "Amyuni",
+            "imagePosition": "left"
           }
         ]
       },
@@ -78,7 +82,8 @@
             "link": "https://www.concordia.ca/",
             "linkText": "www.concordia.ca",
             "contents": "",
-            "image": "Concordia"
+            "image": "Concordia",
+            "imagePosition": "right"
           },
           {
             "subTitle1": "2001-2004",
@@ -86,7 +91,8 @@
             "subTitle2": "Bachalor in Computer Science",
             "link": "https://www.uh.cu",
             "contents": "",
-            "image": "UH"
+            "image": "UH",
+            "imagePosition": "left"
           }
         ]
       },
@@ -105,7 +111,8 @@
               "With Aruba Central, organizations can benefit from features such as network monitoring, configuration management, firmware updates, role-based access control, analytics, and reporting. The cloud-based nature of Aruba Central enables easy scalability.",
               "Development for Aruba Central involves Typescript, React, Angular, Grapql, Kubernetes, among other toolchains."
             ],
-            "image": "ArubaCNX"
+            "image": "ArubaCNX",
+            "imagePosition": "right"
           },
           {
             "title": "Aruba OS",
@@ -113,30 +120,32 @@
             "link": "https://www.arubanetworks.com/resource/aos-10-at-a-glance",
             "contents": [
               "Aruba OS is a Network Management System for HPE Aruba Access Points and Controllers.",
-              "A web application is provided at each management level.",
-              "Additional web applications serve as troubleshooting tools.",
               "Development for Aruba OS involves Embedded Linux, ANSI C, AngularJS, Docker, among other toolchains."
             ],
-            "image": "AOS"
+            "image": "AOS",
+            "imagePosition": "left"
           },
           {
             "title": "Amyuni PDF Converter",
             "subTitle2": "Amyuni Technologies, Montreal, Canada",
             "contents": "Amyuni PDF Converter is a software tool that allows users to create and edit digital documents such as PDF, PostScript or XPS. It is composed by a Microsoft Certified virtual printer driver that developers can use and control from a Windows application. It was implemented in a mix of C and C++",
-            "image": "AmyuniPdfConverter2"
+            "image": "AmyuniPdfConverter2",
+            "imagePosition": "right"
           },
           {
             "title": "Amyuni PDF Creator",
             "subTitle2": "Amyuni Technologies, Montreal, Canada",
             "contents": "Amyuni PDF Creator is a Windows-based software library that allows developers to generate, edit, display and print PDF documents programmatically. This library provides developers with control over document formatting, page layouts, text and image insertion, watermarking, encryption, and digital signature capabilities, supporting a wide range of programming languages and frameworks (.net, C++, COM).",
-            "image": "AmyuniPdfCreator"
+            "image": "AmyuniPdfCreator",
+            "imagePosition": "left"
           },
           {
             "title": "Web portfolio template",
             "link": "https://github.com/yoisel/portfolio-template",
             "subTitle2": "Open Source",
             "contents": "An unencumbered portfolio template based on React and Mui. It provides a responsive design and it is offered with MIT open source license",
-            "image": "PortfolioTemplate"
+            "image": "PortfolioTemplate",
+            "imagePosition": "right"
           }
         ]
       }
@@ -159,12 +168,13 @@
         "portfolioPageItems": [
           {
             "contents": [
-              "Soy un desarrollador de software Full Stack con más de 15 años de experiencia, incluyendo experiencia liderando equipos de desarrolladores. Soy particularmente consciente de la seguridad y la calidad del código en los productos en los que trabajo. Disfruto resolviendo problemas, enfrentando desafíos y aprendiendo nuevas tecnologías.",
+              "Soy un desarrollador de software Full Stack con cerca de dos décadas de experiencia, incluyendo experiencia liderando equipos de desarrolladores. Soy particularmente consciente de la seguridad y la calidad del código en los productos en los que trabajo. Disfruto resolviendo problemas, enfrentando desafíos y aprendiendo nuevas tecnologías.",
               "Me gusta andar en bicicleta, trotar suavemente, los libros y películas de ciencia ficción y fantasía.",
               "Aprendí mi primer lenguaje de programación (Logo) a los 11 años, luego pasé a MSX Basic y Pascal a los 16. Encontré mi pasión en la programación y desde entonces nunca he mirado atrás.",
               "Nací en Cuba, una isla en el Mar Caribe, y actualmente vivo en Montreal, Canadá."
             ],
-            "image": "Coffee"
+            "image": "Coffee",
+            "imagePosition": "left"
           }
         ]
       },
@@ -181,6 +191,7 @@
             "linkText": "www.hpe.com",
             "contents": [
               "• Liderazgo técnico en el desarrollo de una biblioteca de componentes basada en React para Aruba Central, un Sistema de Gestión de Red basado en la nube, con un equipo distribuido en múltiples geografías.",
+              "• Miembro del equipo de Desarrollo de Software Seguro de HPE Aruba.",
               "• Desarrollo de módulos de software para Aruba Central y Aruba Instant On.",
               "• Desarrollo de módulos de software para Aruba OS, un sistema operativo embebido basado en Linux para redes inalámbricas gestionadas.",
               "",
@@ -189,7 +200,8 @@
               "    Docker, Angular, AngularJS, Javascript, ES6, NodeJS, Java, Sistemas Embebidos Linux,",
               "    ANSI C, Protocolos de Red, Especificaciones Wifi (802.11)."
             ],
-            "image": "HPE"
+            "image": "HPE",
+            "imagePosition": "right"
           },
           {
             "subTitle1": "2009 - 2016",
@@ -205,7 +217,8 @@
               "• Desarrollo de una plataforma Windows Embedded CE con varios módulos de software personalizados.",
               "• Desarrollo de varios módulos de software para iOS y Mac OS X."
             ],
-            "image": "Amyuni"
+            "image": "Amyuni",
+            "imagePosition": "left"
           }
         ]
       },
@@ -221,7 +234,8 @@
             "link": "https://www.concordia.ca/",
             "linkText": "www.concordia.ca",
             "contents": "",
-            "image": "Concordia"
+            "image": "Concordia",
+            "imagePosition": "right"
           },
           {
             "subTitle1": "2001-2004",
@@ -229,7 +243,8 @@
             "subTitle2": "Licenciatura en Ciencias de la Computación",
             "link": "https://www.uh.cu",
             "contents": "",
-            "image": "UH"
+            "image": "UH",
+            "imagePosition": "left"
           }
         ]
       },
@@ -248,7 +263,8 @@
               "Con Aruba Central, las organizaciones pueden beneficiarse de características como monitoreo de red, gestión de configuración, actualizaciones de firmware, control de acceso basado en roles, análisis y reportes. La naturaleza basada en la nube de Aruba Central permite una fácil escalabilidad.",
               "El desarrollo para Aruba Central involucra Typescript, React, Angular, Graphql, Kubernetes, entre otras herramientas."
             ],
-            "image": "ArubaCNX"
+            "image": "ArubaCNX",
+            "imagePosition": "right"
           },
           {
             "title": "Aruba OS",
@@ -260,26 +276,30 @@
               "Aplicaciones web adicionales sirven como herramientas de solución de problemas.",
               "El desarrollo para Aruba OS involucra Linux Embebido, ANSI C, AngularJS, Docker, entre otras herramientas."
             ],
-            "image": "AOS"
+            "image": "AOS",
+            "imagePosition": "left"
           },
           {
             "title": "Amyuni PDF Converter",
             "subTitle2": "Amyuni Technologies, Montreal, Canadá",
             "contents": "Amyuni PDF Converter es una herramienta de software que permite a los usuarios crear y editar documentos digitales como PDF, PostScript o XPS. Está compuesto por un controlador de impresora virtual certificado por Microsoft que los desarrolladores pueden usar y controlar desde una aplicación Windows. Fue implementado en una mezcla de C y C++",
-            "image": "AmyuniPdfConverter2"
+            "image": "AmyuniPdfConverter2",
+            "imagePosition": "right"
           },
           {
             "title": "Amyuni PDF Creator",
             "subTitle2": "Amyuni Technologies, Montreal, Canadá",
             "contents": "Amyuni PDF Creator es una biblioteca de software para Windows que permite a los desarrolladores generar, editar, mostrar e imprimir documentos PDF de forma programática. Esta biblioteca proporciona a los desarrollores control sobre el formato de documentos, diseños de página, inserción de texto e imágenes, marcas de agua, cifrado y capacidades de firma digital, compatible con una amplia gama de lenguajes de programación y frameworks (.net, C++, COM).",
-            "image": "AmyuniPdfCreator"
+            "image": "AmyuniPdfCreator",
+            "imagePosition": "left"
           },
           {
             "title": "Plantilla de portafolio web",
             "link": "https://github.com/yoisel/portfolio-template",
             "subTitle2": "Código Abierto",
             "contents": "Una plantilla de portafolio sin restricciones basada en React y Mui. Proporciona un diseño responsive y se ofrece con licencia MIT de código abierto",
-            "image": "PortfolioTemplate"
+            "image": "PortfolioTemplate",
+            "imagePosition": "right"
           }
         ]
       }
@@ -302,12 +322,13 @@
         "portfolioPageItems": [
           {
             "contents": [
-              "Je suis un développeur Full Stack avec plus de 15 ans d'expérience, incluant la direction d'équipes de développeurs. Je suis particulièrement attentif à la sécurité et à la qualité du code dans les produits sur lesquels je travaille. J'aime résoudre des problèmes, relever des défis et apprendre de nouvelles technologies.",
+              "Je suis un développeur Full Stack avec près de deux décennies d'expérience, incluant la direction d'équipes de développeurs. Je suis particulièrement attentif à la sécurité et à la qualité du code dans les produits sur lesquels je travaille. J'aime résoudre des problèmes, relever des défis et apprendre de nouvelles technologies.",
               "J'aime faire du vélo, du jogging léger, les livres et films de science-fiction et de fantasy.",
               "J'ai appris mon premier langage de programmation (Logo) à 11 ans, puis je suis passé à MSX Basic et Pascal à 16 ans. J'ai trouvé ma passion dans la programmation et je n'ai jamais regardé en arrière depuis.",
               "Je suis né à Cuba, une île dans la mer des Caraïbes, et je vis actuellement à Montréal, Canada."
             ],
-            "image": "Coffee"
+            "image": "Coffee",
+            "imagePosition": "left"
           }
         ]
       },
@@ -324,6 +345,7 @@
             "linkText": "www.hpe.com",
             "contents": [
               "• Direction technique du développement d'une bibliothèque de composants basée sur React pour Aruba Central, un système de gestion de réseau basé sur le cloud, avec une équipe distribuée sur plusieurs zones géographiques.",
+              "• Membre de l'équipe de Développement Sécurisé des Logiciels HPE Aruba.",
               "• Développement de modules logiciels pour Aruba Central et Aruba Instant On.",
               "• Développement de modules logiciels pour Aruba OS, un système d'exploitation embarqué basé sur Linux pour les réseaux sans fil gérés.",
               "",
@@ -332,7 +354,8 @@
               "    Docker, Angular, AngularJS, Javascript, ES6, NodeJS, Java, Systèmes Embarqués Linux,",
               "    ANSI C, Protocoles Réseau, Spécifications Wifi (802.11)."
             ],
-            "image": "HPE"
+            "image": "HPE",
+            "imagePosition": "right"
           },
           {
             "subTitle1": "2009 - 2016",
@@ -348,7 +371,8 @@
               "• Développement d'une plateforme Windows Embedded CE avec plusieurs modules logiciels personnalisés.",
               "• Développement de plusieurs modules logiciels pour iOS et Mac OS X."
             ],
-            "image": "Amyuni"
+            "image": "Amyuni",
+            "imagePosition": "left"
           }
         ]
       },
@@ -364,7 +388,8 @@
             "link": "https://www.concordia.ca/",
             "linkText": "www.concordia.ca",
             "contents": "",
-            "image": "Concordia"
+            "image": "Concordia",
+            "imagePosition": "right"
           },
           {
             "subTitle1": "2001-2004",
@@ -372,7 +397,8 @@
             "subTitle2": "Licence en Informatique",
             "link": "https://www.uh.cu",
             "contents": "",
-            "image": "UH"
+            "image": "UH",
+            "imagePosition": "left"
           }
         ]
       },
@@ -391,7 +417,8 @@
               "Avec Aruba Central, les organisations peuvent bénéficier de fonctionnalités telles que la surveillance du réseau, la gestion de la configuration, les mises à jour du firmware, le contrôle d'accès basé sur les rôles, l'analyse et les rapports. La nature basée sur le cloud d'Aruba Central permet une évolutivité facile.",
               "Le développement pour Aruba Central implique Typescript, React, Angular, Graphql, Kubernetes, entre autres outils."
             ],
-            "image": "ArubaCNX"
+            "image": "ArubaCNX",
+            "imagePosition": "right"
           },
           {
             "title": "Aruba OS",
@@ -403,26 +430,30 @@
               "Des applications web supplémentaires servent d'outils de dépannage.",
               "Le développement pour Aruba OS implique Linux embarqué, ANSI C, AngularJS, Docker, entre autres outils."
             ],
-            "image": "AOS"
+            "image": "AOS",
+            "imagePosition": "left"
           },
           {
             "title": "Amyuni PDF Converter",
             "subTitle2": "Amyuni Technologies, Montréal, Canada",
             "contents": "Amyuni PDF Converter est un outil logiciel qui permet aux utilisateurs de créer et d'éditer des documents numériques tels que PDF, PostScript ou XPS. Il est composé d'un pilote d'imprimante virtuelle certifié Microsoft que les développeurs peuvent utiliser et contrôler depuis une application Windows. Il a été implémenté dans un mélange de C et C++",
-            "image": "AmyuniPdfConverter2"
+            "image": "AmyuniPdfConverter2",
+            "imagePosition": "right"
           },
           {
             "title": "Amyuni PDF Creator",
             "subTitle2": "Amyuni Technologies, Montréal, Canada",
             "contents": "Amyuni PDF Creator est une bibliothèque logicielle Windows qui permet aux développeurs de générer, éditer, afficher et imprimer des documents PDF de manière programmatique. Cette bibliothèque offre aux développeurs un contrôle sur la mise en forme des documents, les mises en page, l'insertion de texte et d'images, le filigrane, le chiffrement et les capacités de signature numérique, prenant en charge une large gamme de langages de programmation et de frameworks (.net, C++, COM).",
-            "image": "AmyuniPdfCreator"
+            "image": "AmyuniPdfCreator",
+            "imagePosition": "left"
           },
           {
             "title": "Modèle de portfolio web",
             "link": "https://github.com/yoisel/portfolio-template",
             "subTitle2": "Open Source",
             "contents": "Un modèle de portfolio sans contraintes basé sur React et Mui. Il fournit une conception responsive et est proposé avec une licence open source MIT",
-            "image": "PortfolioTemplate"
+            "image": "PortfolioTemplate",
+            "imagePosition": "right"
           }
         ]
       }

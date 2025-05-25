@@ -1,6 +1,6 @@
 import { ThemeOptions } from '@mui/material';
 
-export const themeOptions: ThemeOptions = {
+export const greenTheme: ThemeOptions = {
   palette: {
     mode: 'dark',
     primary: {

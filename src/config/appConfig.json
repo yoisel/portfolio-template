@@ -1,0 +1,431 @@
+{
+  "en": {
+    "title": "Yoisel's Portfolio",
+    "avatarImage": "Avatar",
+    "theme": "darkBlueTheme",
+    "social": {
+      "github": "https://github.com/yoisel",
+      "linkedin": "https://www.linkedin.com/in/yoisel/",
+      "stackoverflow": "https://stackoverflow.com/users/501196/yms"
+    },
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Me",
+        "backgroundImage": "BeachDark",
+        "portfolioPageItems": [
+          {
+            "contents": [
+              "I am a Full Stack software developer with more than 15 years of experience, including a few leading teams of developers. I am particularly conscious about security and code quality in the products I work on. I enjoy solving problems, facing challenges and learning new technologies.",
+              "I like biking, light jogging, science-fiction - fantasy books and films.",
+              "I learned my first programming language (Logo) at age 11, then moved into MSX Basic and Pascal by age 16. I found my passion in programming and I have never looked back since then.",
+              "I was born in Cuba, an island in the Caribbean Sea, and I currently live in Montreal, Canada."
+            ],
+            "image": "Coffee"
+          }
+        ]
+      },
+      {
+        "id": "experience",
+        "title": "Recent Roles",
+        "backgroundImage": "MathDark1",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "April 2016 - Today",
+            "title": "Senior Software Developer / Tech Lead",
+            "subTitle2": "Hewlett Packard Enterprise - Montreal, Canada",
+            "link": "https://www.hpe.com",
+            "linkText": "www.hpe.com",
+            "contents": [
+              "• Technical leading on the development of a React-based components library for Aruba Central, a cloud-based Network Management System, with a distributed team across multiple geographies.",
+              "• Development of software modules for Aruba Central and Aruba Instant On.",
+              "• Development of software modules for Aruba OS, a Linux-based embedded operating system for managed wireless networks.",
+              "",
+              "Technologies used:",
+              "    React, MUI, styled-components, Storybook, Cypress, Jenkins, TypeScript, HTML, CSS, SCSS,",
+              "    Docker, Angular, AngularJS, Javascript, ES6, NodeJS, Java, Linux-based Embedded Systems,",
+              "    ANSI C, Network protocols, Wifi (802.11) specifications."
+            ],
+            "image": "HPE"
+          },
+          {
+            "subTitle1": "2009 - 2016",
+            "title": "Senior Software Developer / Team Lead",
+            "subTitle2": "Amyuni Technologies",
+            "link": "https://www.amyuni.com",
+            "linkText": "www.amyuni.com",
+            "contents": [
+              "Amyuni Technologies is a software company specialized in the development of applications and libraries for end users and developers that facilitates processing and producing digital documents such as PDF, PostScript and Microsoft XPS.",
+              "• Team leader since January 2013, controlling the development process and keeping track of the status of each project, planning and prioritizing the tasks for the development team, establishing and updating the protocol for quality assurance and participating in the hiring process for new developers.",
+              "• Development of software modules for Amyuni PDF libraries using several technologies and programming languages (.net, C#, C, C++, ActiveX, Windows Driver Kit, Task Parallel Libraries, Async-programming).",
+              "• Development of a JavaScript interpreter and its corresponding Document Object Model for PDF dynamic forms (C++, yacc, bison, ECMA-Script specifications).",
+              "• Development of a Windows Embedded CE platform with several customized software modules.",
+              "• Development of several software modules for iOS and Mac OS X."
+            ],
+            "image": "Amyuni"
+          }
+        ]
+      },
+      {
+        "id": "education",
+        "title": "Education",
+        "backgroundImage": "Universe",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "2010 - 2011",
+            "title": "Concordia University, Montreal, Canada",
+            "subTitle2": "Master in Applied Computer Science",
+            "link": "https://www.concordia.ca/",
+            "linkText": "www.concordia.ca",
+            "contents": "",
+            "image": "Concordia"
+          },
+          {
+            "subTitle1": "2001-2004",
+            "title": "Havana University (Universidad de la Habana)",
+            "subTitle2": "Bachalor in Computer Science",
+            "link": "https://www.uh.cu",
+            "contents": "",
+            "image": "UH"
+          }
+        ]
+      },
+      {
+        "id": "projects",
+        "title": "Recent Projects",
+        "description": "Some examples of project where I have participated as part of a team",
+        "backgroundImage": "SignalsDark",
+        "portfolioPageItems": [
+          {
+            "title": "Aruba Central",
+            "link": "https://www.arubanetworks.com/video/?v=Products%20and%20Solutions/aruba_next_gen_central_-1.mp4",
+            "subTitle2": "HPE Aruba Networking, Montreal, Canada",
+            "contents": [
+              "Aruba Central is a cloud-based network management platform that offers centralized control and visibility over Aruba networking devices and services, providing a unified interface for monitoring and configuring Aruba switches, access points, and controllers across distributed locations.",
+              "With Aruba Central, organizations can benefit from features such as network monitoring, configuration management, firmware updates, role-based access control, analytics, and reporting. The cloud-based nature of Aruba Central enables easy scalability.",
+              "Development for Aruba Central involves Typescript, React, Angular, Grapql, Kubernetes, among other toolchains."
+            ],
+            "image": "ArubaCNX"
+          },
+          {
+            "title": "Aruba OS",
+            "subTitle2": "HPE Aruba Networking, Montreal, Canada",
+            "link": "https://www.arubanetworks.com/resource/aos-10-at-a-glance",
+            "contents": [
+              "Aruba OS is a Network Management System for HPE Aruba Access Points and Controllers.",
+              "A web application is provided at each management level.",
+              "Additional web applications serve as troubleshooting tools.",
+              "Development for Aruba OS involves Embedded Linux, ANSI C, AngularJS, Docker, among other toolchains."
+            ],
+            "image": "AOS"
+          },
+          {
+            "title": "Amyuni PDF Converter",
+            "subTitle2": "Amyuni Technologies, Montreal, Canada",
+            "contents": "Amyuni PDF Converter is a software tool that allows users to create and edit digital documents such as PDF, PostScript or XPS. It is composed by a Microsoft Certified virtual printer driver that developers can use and control from a Windows application. It was implemented in a mix of C and C++",
+            "image": "AmyuniPdfConverter2"
+          },
+          {
+            "title": "Amyuni PDF Creator",
+            "subTitle2": "Amyuni Technologies, Montreal, Canada",
+            "contents": "Amyuni PDF Creator is a Windows-based software library that allows developers to generate, edit, display and print PDF documents programmatically. This library provides developers with control over document formatting, page layouts, text and image insertion, watermarking, encryption, and digital signature capabilities, supporting a wide range of programming languages and frameworks (.net, C++, COM).",
+            "image": "AmyuniPdfCreator"
+          },
+          {
+            "title": "Web portfolio template",
+            "link": "https://github.com/yoisel/portfolio-template",
+            "subTitle2": "Open Source",
+            "contents": "An unencumbered portfolio template based on React and Mui. It provides a responsive design and it is offered with MIT open source license",
+            "image": "PortfolioTemplate"
+          }
+        ]
+      }
+    ]
+  },
+  "es": {
+    "title": "Portafolio de Yoisel",
+    "avatarImage": "Avatar",
+    "theme": "darkBlueTheme",
+    "social": {
+      "github": "https://github.com/yoisel",
+      "linkedin": "https://www.linkedin.com/in/yoisel/",
+      "stackoverflow": "https://stackoverflow.com/users/501196/yms"
+    },
+    "sections": [
+      {
+        "id": "about",
+        "title": "Sobre Mí",
+        "backgroundImage": "BeachDark",
+        "portfolioPageItems": [
+          {
+            "contents": [
+              "Soy un desarrollador de software Full Stack con más de 15 años de experiencia, incluyendo experiencia liderando equipos de desarrolladores. Soy particularmente consciente de la seguridad y la calidad del código en los productos en los que trabajo. Disfruto resolviendo problemas, enfrentando desafíos y aprendiendo nuevas tecnologías.",
+              "Me gusta andar en bicicleta, trotar suavemente, los libros y películas de ciencia ficción y fantasía.",
+              "Aprendí mi primer lenguaje de programación (Logo) a los 11 años, luego pasé a MSX Basic y Pascal a los 16. Encontré mi pasión en la programación y desde entonces nunca he mirado atrás.",
+              "Nací en Cuba, una isla en el Mar Caribe, y actualmente vivo en Montreal, Canadá."
+            ],
+            "image": "Coffee"
+          }
+        ]
+      },
+      {
+        "id": "experience",
+        "title": "Roles Recientes",
+        "backgroundImage": "MathDark1",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "Abril 2016 - Hoy",
+            "title": "Desarrollador Senior / Líder Técnico",
+            "subTitle2": "Hewlett Packard Enterprise - Montreal, Canadá",
+            "link": "https://www.hpe.com",
+            "linkText": "www.hpe.com",
+            "contents": [
+              "• Liderazgo técnico en el desarrollo de una biblioteca de componentes basada en React para Aruba Central, un Sistema de Gestión de Red basado en la nube, con un equipo distribuido en múltiples geografías.",
+              "• Desarrollo de módulos de software para Aruba Central y Aruba Instant On.",
+              "• Desarrollo de módulos de software para Aruba OS, un sistema operativo embebido basado en Linux para redes inalámbricas gestionadas.",
+              "",
+              "Tecnologías utilizadas:",
+              "    React, MUI, styled-components, Storybook, Cypress, Jenkins, TypeScript, HTML, CSS, SCSS,",
+              "    Docker, Angular, AngularJS, Javascript, ES6, NodeJS, Java, Sistemas Embebidos Linux,",
+              "    ANSI C, Protocolos de Red, Especificaciones Wifi (802.11)."
+            ],
+            "image": "HPE"
+          },
+          {
+            "subTitle1": "2009 - 2016",
+            "title": "Desarrollador Senior / Líder de Equipo",
+            "subTitle2": "Amyuni Technologies",
+            "link": "https://www.amyuni.com",
+            "linkText": "www.amyuni.com",
+            "contents": [
+              "Amyuni Technologies es una empresa de software especializada en el desarrollo de aplicaciones y bibliotecas para usuarios finales y desarrolladores que facilita el procesamiento y la producción de documentos digitales como PDF, PostScript y Microsoft XPS.",
+              "• Líder de equipo desde enero de 2013, controlando el proceso de desarrollo y haciendo seguimiento del estado de cada proyecto, planificando y priorizando las tareas para el equipo de desarrollo, estableciendo y actualizando el protocolo de control de calidad y participando en el proceso de contratación de nuevos desarrolladores.",
+              "• Desarrollo de módulos de software para las bibliotecas PDF de Amyuni usando varias tecnologías y lenguajes de programación (.net, C#, C, C++, ActiveX, Windows Driver Kit, Task Parallel Libraries, programación asíncrona).",
+              "• Desarrollo de un intérprete JavaScript y su correspondiente Document Object Model para formularios dinámicos PDF (C++, yacc, bison, especificaciones ECMA-Script).",
+              "• Desarrollo de una plataforma Windows Embedded CE con varios módulos de software personalizados.",
+              "• Desarrollo de varios módulos de software para iOS y Mac OS X."
+            ],
+            "image": "Amyuni"
+          }
+        ]
+      },
+      {
+        "id": "education",
+        "title": "Educación",
+        "backgroundImage": "Universe",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "2010 - 2011",
+            "title": "Universidad Concordia, Montreal, Canadá",
+            "subTitle2": "Maestría en Ciencias de la Computación Aplicada",
+            "link": "https://www.concordia.ca/",
+            "linkText": "www.concordia.ca",
+            "contents": "",
+            "image": "Concordia"
+          },
+          {
+            "subTitle1": "2001-2004",
+            "title": "Universidad de La Habana",
+            "subTitle2": "Licenciatura en Ciencias de la Computación",
+            "link": "https://www.uh.cu",
+            "contents": "",
+            "image": "UH"
+          }
+        ]
+      },
+      {
+        "id": "projects",
+        "title": "Proyectos Recientes",
+        "description": "Algunos ejemplos de proyectos en los que he participado como parte de un equipo",
+        "backgroundImage": "SignalsDark",
+        "portfolioPageItems": [
+          {
+            "title": "Aruba Central",
+            "link": "https://www.arubanetworks.com/video/?v=Products%20and%20Solutions/aruba_next_gen_central_-1.mp4",
+            "subTitle2": "HPE Aruba Networking, Montreal, Canadá",
+            "contents": [
+              "Aruba Central es una plataforma de gestión de redes basada en la nube que ofrece control y visibilidad centralizados sobre los dispositivos y servicios de red Aruba, proporcionando una interfaz unificada para monitorear y configurar switches, puntos de acceso y controladores Aruba en ubicaciones distribuidas.",
+              "Con Aruba Central, las organizaciones pueden beneficiarse de características como monitoreo de red, gestión de configuración, actualizaciones de firmware, control de acceso basado en roles, análisis y reportes. La naturaleza basada en la nube de Aruba Central permite una fácil escalabilidad.",
+              "El desarrollo para Aruba Central involucra Typescript, React, Angular, Graphql, Kubernetes, entre otras herramientas."
+            ],
+            "image": "ArubaCNX"
+          },
+          {
+            "title": "Aruba OS",
+            "subTitle2": "HPE Aruba Networking, Montreal, Canadá",
+            "link": "https://www.arubanetworks.com/resource/aos-10-at-a-glance",
+            "contents": [
+              "Aruba OS es un Sistema de Gestión de Red para Puntos de Acceso y Controladores HPE Aruba.",
+              "Se proporciona una aplicación web en cada nivel de gestión.",
+              "Aplicaciones web adicionales sirven como herramientas de solución de problemas.",
+              "El desarrollo para Aruba OS involucra Linux Embebido, ANSI C, AngularJS, Docker, entre otras herramientas."
+            ],
+            "image": "AOS"
+          },
+          {
+            "title": "Amyuni PDF Converter",
+            "subTitle2": "Amyuni Technologies, Montreal, Canadá",
+            "contents": "Amyuni PDF Converter es una herramienta de software que permite a los usuarios crear y editar documentos digitales como PDF, PostScript o XPS. Está compuesto por un controlador de impresora virtual certificado por Microsoft que los desarrolladores pueden usar y controlar desde una aplicación Windows. Fue implementado en una mezcla de C y C++",
+            "image": "AmyuniPdfConverter2"
+          },
+          {
+            "title": "Amyuni PDF Creator",
+            "subTitle2": "Amyuni Technologies, Montreal, Canadá",
+            "contents": "Amyuni PDF Creator es una biblioteca de software para Windows que permite a los desarrolladores generar, editar, mostrar e imprimir documentos PDF de forma programática. Esta biblioteca proporciona a los desarrollores control sobre el formato de documentos, diseños de página, inserción de texto e imágenes, marcas de agua, cifrado y capacidades de firma digital, compatible con una amplia gama de lenguajes de programación y frameworks (.net, C++, COM).",
+            "image": "AmyuniPdfCreator"
+          },
+          {
+            "title": "Plantilla de portafolio web",
+            "link": "https://github.com/yoisel/portfolio-template",
+            "subTitle2": "Código Abierto",
+            "contents": "Una plantilla de portafolio sin restricciones basada en React y Mui. Proporciona un diseño responsive y se ofrece con licencia MIT de código abierto",
+            "image": "PortfolioTemplate"
+          }
+        ]
+      }
+    ]
+  },
+  "fr": {
+    "title": "Portfolio de Yoisel",
+    "avatarImage": "Avatar",
+    "theme": "darkBlueTheme",
+    "social": {
+      "github": "https://github.com/yoisel",
+      "linkedin": "https://www.linkedin.com/in/yoisel/",
+      "stackoverflow": "https://stackoverflow.com/users/501196/yms"
+    },
+    "sections": [
+      {
+        "id": "about",
+        "title": "À Propos de Moi",
+        "backgroundImage": "BeachDark",
+        "portfolioPageItems": [
+          {
+            "contents": [
+              "Je suis un développeur Full Stack avec plus de 15 ans d'expérience, incluant la direction d'équipes de développeurs. Je suis particulièrement attentif à la sécurité et à la qualité du code dans les produits sur lesquels je travaille. J'aime résoudre des problèmes, relever des défis et apprendre de nouvelles technologies.",
+              "J'aime faire du vélo, du jogging léger, les livres et films de science-fiction et de fantasy.",
+              "J'ai appris mon premier langage de programmation (Logo) à 11 ans, puis je suis passé à MSX Basic et Pascal à 16 ans. J'ai trouvé ma passion dans la programmation et je n'ai jamais regardé en arrière depuis.",
+              "Je suis né à Cuba, une île dans la mer des Caraïbes, et je vis actuellement à Montréal, Canada."
+            ],
+            "image": "Coffee"
+          }
+        ]
+      },
+      {
+        "id": "experience",
+        "title": "Rôles Récents",
+        "backgroundImage": "MathDark1",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "Avril 2016 - Aujourd'hui",
+            "title": "Développeur Senior / Lead Technique",
+            "subTitle2": "Hewlett Packard Enterprise - Montréal, Canada",
+            "link": "https://www.hpe.com",
+            "linkText": "www.hpe.com",
+            "contents": [
+              "• Direction technique du développement d'une bibliothèque de composants basée sur React pour Aruba Central, un système de gestion de réseau basé sur le cloud, avec une équipe distribuée sur plusieurs zones géographiques.",
+              "• Développement de modules logiciels pour Aruba Central et Aruba Instant On.",
+              "• Développement de modules logiciels pour Aruba OS, un système d'exploitation embarqué basé sur Linux pour les réseaux sans fil gérés.",
+              "",
+              "Technologies utilisées :",
+              "    React, MUI, styled-components, Storybook, Cypress, Jenkins, TypeScript, HTML, CSS, SCSS,",
+              "    Docker, Angular, AngularJS, Javascript, ES6, NodeJS, Java, Systèmes Embarqués Linux,",
+              "    ANSI C, Protocoles Réseau, Spécifications Wifi (802.11)."
+            ],
+            "image": "HPE"
+          },
+          {
+            "subTitle1": "2009 - 2016",
+            "title": "Développeur Senior / Chef d'Équipe",
+            "subTitle2": "Amyuni Technologies",
+            "link": "https://www.amyuni.com",
+            "linkText": "www.amyuni.com",
+            "contents": [
+              "Amyuni Technologies est une entreprise de logiciels spécialisée dans le développement d'applications et de bibliothèques pour les utilisateurs finaux et les développeurs qui facilite le traitement et la production de documents numériques tels que PDF, PostScript et Microsoft XPS.",
+              "• Chef d'équipe depuis janvier 2013, contrôlant le processus de développement et suivant l'état de chaque projet, planifiant et priorisant les tâches pour l'équipe de développement, établissant et mettant à jour le protocole d'assurance qualité et participant au processus d'embauche de nouveaux développeurs.",
+              "• Développement de modules logiciels pour les bibliothèques PDF Amyuni utilisant plusieurs technologies et langages de programmation (.net, C#, C, C++, ActiveX, Windows Driver Kit, Task Parallel Libraries, programmation asynchrone).",
+              "• Développement d'un interpréteur JavaScript et de son Document Object Model correspondant pour les formulaires PDF dynamiques (C++, yacc, bison, spécifications ECMA-Script).",
+              "• Développement d'une plateforme Windows Embedded CE avec plusieurs modules logiciels personnalisés.",
+              "• Développement de plusieurs modules logiciels pour iOS et Mac OS X."
+            ],
+            "image": "Amyuni"
+          }
+        ]
+      },
+      {
+        "id": "education",
+        "title": "Éducation",
+        "backgroundImage": "Universe",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "2010 - 2011",
+            "title": "Université Concordia, Montréal, Canada",
+            "subTitle2": "Maîtrise en Informatique Appliquée",
+            "link": "https://www.concordia.ca/",
+            "linkText": "www.concordia.ca",
+            "contents": "",
+            "image": "Concordia"
+          },
+          {
+            "subTitle1": "2001-2004",
+            "title": "Université de La Havane",
+            "subTitle2": "Licence en Informatique",
+            "link": "https://www.uh.cu",
+            "contents": "",
+            "image": "UH"
+          }
+        ]
+      },
+      {
+        "id": "projects",
+        "title": "Projets Récents",
+        "description": "Quelques exemples de projets auxquels j'ai participé en tant que membre d'une équipe",
+        "backgroundImage": "SignalsDark",
+        "portfolioPageItems": [
+          {
+            "title": "Aruba Central",
+            "link": "https://www.arubanetworks.com/video/?v=Products%20and%20Solutions/aruba_next_gen_central_-1.mp4",
+            "subTitle2": "HPE Aruba Networking, Montréal, Canada",
+            "contents": [
+              "Aruba Central est une plateforme de gestion de réseau basée sur le cloud qui offre un contrôle et une visibilité centralisés sur les appareils et services réseau Aruba, fournissant une interface unifiée pour surveiller et configurer les commutateurs, points d'accès et contrôleurs Aruba dans des emplacements distribués.",
+              "Avec Aruba Central, les organisations peuvent bénéficier de fonctionnalités telles que la surveillance du réseau, la gestion de la configuration, les mises à jour du firmware, le contrôle d'accès basé sur les rôles, l'analyse et les rapports. La nature basée sur le cloud d'Aruba Central permet une évolutivité facile.",
+              "Le développement pour Aruba Central implique Typescript, React, Angular, Graphql, Kubernetes, entre autres outils."
+            ],
+            "image": "ArubaCNX"
+          },
+          {
+            "title": "Aruba OS",
+            "subTitle2": "HPE Aruba Networking, Montréal, Canada",
+            "link": "https://www.arubanetworks.com/resource/aos-10-at-a-glance",
+            "contents": [
+              "Aruba OS est un système de gestion de réseau pour les points d'accès et contrôleurs HPE Aruba.",
+              "Une application web est fournie à chaque niveau de gestion.",
+              "Des applications web supplémentaires servent d'outils de dépannage.",
+              "Le développement pour Aruba OS implique Linux embarqué, ANSI C, AngularJS, Docker, entre autres outils."
+            ],
+            "image": "AOS"
+          },
+          {
+            "title": "Amyuni PDF Converter",
+            "subTitle2": "Amyuni Technologies, Montréal, Canada",
+            "contents": "Amyuni PDF Converter est un outil logiciel qui permet aux utilisateurs de créer et d'éditer des documents numériques tels que PDF, PostScript ou XPS. Il est composé d'un pilote d'imprimante virtuelle certifié Microsoft que les développeurs peuvent utiliser et contrôler depuis une application Windows. Il a été implémenté dans un mélange de C et C++",
+            "image": "AmyuniPdfConverter2"
+          },
+          {
+            "title": "Amyuni PDF Creator",
+            "subTitle2": "Amyuni Technologies, Montréal, Canada",
+            "contents": "Amyuni PDF Creator est une bibliothèque logicielle Windows qui permet aux développeurs de générer, éditer, afficher et imprimer des documents PDF de manière programmatique. Cette bibliothèque offre aux développeurs un contrôle sur la mise en forme des documents, les mises en page, l'insertion de texte et d'images, le filigrane, le chiffrement et les capacités de signature numérique, prenant en charge une large gamme de langages de programmation et de frameworks (.net, C++, COM).",
+            "image": "AmyuniPdfCreator"
+          },
+          {
+            "title": "Modèle de portfolio web",
+            "link": "https://github.com/yoisel/portfolio-template",
+            "subTitle2": "Open Source",
+            "contents": "Un modèle de portfolio sans contraintes basé sur React et Mui. Il fournit une conception responsive et est proposé avec une licence open source MIT",
+            "image": "PortfolioTemplate"
+          }
+        ]
+      }
+    ]
+  }
+}

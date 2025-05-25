@@ -2,13 +2,17 @@ import { Container } from '@mui/material';
 import { AppConfig } from '../model/AppData.interface';
 import { PortfolioPage } from './PortfolioPage';
 
-export const AppContents = (appConfig: AppConfig) => {
+interface AppContentsProps {
+  sections: AppConfig['sections'];
+}
+
+export const AppContents = ({ sections }: AppContentsProps) => {
   return (
     <Container maxWidth='lg' style={{ paddingTop: '30px' }}>
-      {appConfig.sections?.map((section) => {
+      {sections?.map((section, index) => {
         return (
           <PortfolioPage
-            key={'page-' + section.id}
+            key={index}
             id={section.id}
             title={section.title}
             description={section.description}

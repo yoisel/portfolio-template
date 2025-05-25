@@ -1,25 +1,47 @@
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
-import { useEffectOnce } from 'usehooks-ts';
+import { useEffect, useLayoutEffect, useState } from 'react';
 
-import { themeOptions } from './themes/grayscale';
+import { grayscaleTheme } from './themes/grayscale';
 import { AppHeader } from './components/AppHeader';
 import { AppContents } from './components/AppContents';
-import { appConfig } from './model/AppData';
 
-const theme = createTheme(themeOptions);
+import { MultiLangAppConfig } from './model/AppData.interface';
+import appConfigJson from './config/appConfig.json';
+
+const theme = createTheme(grayscaleTheme);
+
+const LANGUAGES = [
+  { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'fr', label: 'Français', flag: '🇫🇷' }
+];
 
 const App = () => {
-  useEffectOnce(() => {
-    const docTitle = document.getElementById('app-title') || {
-      textContent: ''
-    };
-    docTitle.textContent = appConfig.title;
-  });
+  const [multiLangConfig, setMultiLangConfig] = useState<MultiLangAppConfig | null>(null);
+  const [lang, setLang] = useState('en');
+
+  useEffect(() => {
+    // No need to parse, just set as MultiLangAppConfig
+    setMultiLangConfig(appConfigJson as MultiLangAppConfig);
+  }, []);
+
+  const appConfig = multiLangConfig?.[lang];
+
+  useLayoutEffect(() => {
+    const docTitle = document.getElementById('app-title');
+    if (appConfig && docTitle) {
+      docTitle.textContent = appConfig.title;
+    }
+  }, [appConfig]);
+
+  if (!appConfig) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppHeader {...appConfig} />
+      <AppHeader {...appConfig} lang={lang} setLang={setLang} languages={LANGUAGES} />
       <AppContents {...appConfig} />
     </ThemeProvider>
   );

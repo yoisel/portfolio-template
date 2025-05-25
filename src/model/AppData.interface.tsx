@@ -1,3 +1,5 @@
+import { ThemeOptions } from '@mui/material';
+
 export interface PortfolioPageItem {
   image?: string;
   title?: string;
@@ -7,6 +9,7 @@ export interface PortfolioPageItem {
   backgroundColor?: string;
   link?: string;
   linkText?: string;
+  imagePosition?: 'left' | 'right';
 }
 
 export interface PortfolioSection {
@@ -37,6 +40,14 @@ export interface SocialLinks {
    * Link to a facebook profile
    */
   facebook?: string;
+
+  instagram?: string;
+}
+
+export interface LanguageOption {
+  code: string;
+  label: string;
+  flag: string;
 }
 
 export interface AppHeaderConfig {
@@ -59,11 +70,24 @@ export interface AppHeaderConfig {
    * List of sections of our single-page application
    */
   sections: Pick<PortfolioSection, 'id' | 'title'>[];
+
+  /**
+   * mui theme to be used
+   */
+  theme?: ThemeOptions;
+  // For language dropdown (optional props)
+  lang?: string;
+  setLang?: (lang: string) => void;
+  languages?: LanguageOption[];
 }
 
+// Define AppConfig interface based on AppHeaderConfig or import it if defined elsewhere
 export interface AppConfig extends AppHeaderConfig {
-  /**
-   * List of sections of our single-page application
-   */
+  // Use full PortfolioSection[] for sections, not Pick
   sections: PortfolioSection[];
 }
+
+// Multi-language app config: { en: AppConfig, es: AppConfig, ... }
+export type MultiLangAppConfig = {
+  [lang: string]: AppConfig;
+};

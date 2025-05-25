@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, RenderResult } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { AppHeader } from './AppHeader';
 import { AppHeaderConfig } from '../model/AppData.interface';
 
@@ -19,9 +19,9 @@ describe('AppHeader', () => {
   };
 
   it('renders the app title and avatar', () => {
-    const { getByText, getByAltText }: RenderResult = render(<AppHeader {...props} />);
-    expect(getByText('App Title')).toBeInTheDocument();
-    expect(getByAltText('Picture of Fulano de Tal')).toBeInTheDocument();
+    render(<AppHeader {...props} />);
+    expect(screen.getByText('App Title')).toBeInTheDocument();
+    expect(screen.getByAltText('Picture of Fulano de Tal')).toBeInTheDocument();
   });
 
   it('renders social icons', () => {
@@ -34,8 +34,8 @@ describe('AppHeader', () => {
   });
 
   it('renders section buttons and handles click', () => {
-    const { getByText }: RenderResult = render(<AppHeader {...props} />);
-    const sectionButton: HTMLElement = getByText('Section 1');
+    render(<AppHeader {...props} />);
+    const sectionButton: HTMLElement = screen.getByText('Section 1');
     expect(sectionButton).toBeInTheDocument();
     fireEvent.click(sectionButton);
     // Add assertions for scroll behavior if necessary

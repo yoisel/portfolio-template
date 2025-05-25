@@ -1,4 +1,4 @@
-import { render, screen, RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { SocialIcons } from './SocialIcons';
 import { SocialLinks } from '../model/AppData.interface';
 
@@ -11,7 +11,7 @@ describe('SocialIcons', () => {
   };
 
   it('renders all social icons when links are provided', () => {
-    const { getByRole }: RenderResult = render(<SocialIcons {...props} />);
+    render(<SocialIcons {...props} />);
     const links = screen.getAllByRole('link');
     expect(links[0]).toHaveAttribute('href', 'https://stackoverflow.com');
     expect(links[1]).toHaveAttribute('href', 'https://github.com');

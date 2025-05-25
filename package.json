@@ -2,6 +2,7 @@
   "name": "portfolio-mui",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yoisel.github.io/portfolio-template/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
@@ -31,8 +32,11 @@
     "test": "react-app-rewired test --watchAll=false",
     "eject": "react-app-rewired eject",
     "lint": "eslint ./src",
-    "prettier": "prettier --write ./src",
-    "compile": "tsc --noEmit"  
+    "lint:fix": "eslint --fix ./src",
+    "format:fix": "prettier --write ./src",
+    "format": "prettier --check ./src",
+    "compile": "tsc --noEmit",
+    "validate": "run-s format compile lint build test"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +58,7 @@
   },
   "devDependencies": {
     "html-inline-script-webpack-plugin": "^3.1.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.8.8",
     "react-app-rewired": "^2.2.1"
   }

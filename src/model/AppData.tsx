@@ -15,7 +15,7 @@ const appConfigSchema = yup.object().shape({
       github: yup.string().url(),
       linkedin: yup.string().url(),
       facebook: yup.string().url(),
-      stackoverflow: yup.string().url()      
+      stackoverflow: yup.string().url()
     })
     .required(),
   sections: yup
@@ -36,9 +36,8 @@ const appConfigSchema = yup.object().shape({
                 .test(
                   'is-string-or-array',
                   'contents must be a string or array of strings',
-                  value =>
-                    typeof value === 'string' ||
-                    (Array.isArray(value) && value.every(v => typeof v === 'string'))
+                  (value) =>
+                    typeof value === 'string' || (Array.isArray(value) && value.every((v) => typeof v === 'string'))
                 )
                 .required(),
               image: yup.string(),

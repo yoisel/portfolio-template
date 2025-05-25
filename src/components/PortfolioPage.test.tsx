@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { PortfolioPage } from './PortfolioPage';
 import { PortfolioSection } from '../model/AppData.interface';
 
@@ -24,18 +24,18 @@ describe('PortfolioPage', () => {
   };
 
   it('renders the section title and description', () => {
-    const { getByText }: RenderResult = render(<PortfolioPage {...props} />);
-    expect(getByText('Section Title')).toBeInTheDocument();
-    expect(getByText('Section Description')).toBeInTheDocument();
+    render(<PortfolioPage {...props} />);
+    expect(screen.getByText('Section Title')).toBeInTheDocument();
+    expect(screen.getByText('Section Description')).toBeInTheDocument();
   });
 
   it('renders portfolio page items', () => {
-    const { getByText }: RenderResult = render(<PortfolioPage {...props} />);
-    expect(getByText('Item Title')).toBeInTheDocument();
-    expect(getByText('SubTitle 1')).toBeInTheDocument();
-    expect(getByText('SubTitle 2')).toBeInTheDocument();
-    expect(getByText('Content 1')).toBeInTheDocument();
-    expect(getByText('Content 2')).toBeInTheDocument();
-    expect(getByText('Example Link')).toBeInTheDocument();
+    render(<PortfolioPage {...props} />);
+    expect(screen.getByText('Item Title')).toBeInTheDocument();
+    expect(screen.getByText('SubTitle 1')).toBeInTheDocument();
+    expect(screen.getByText('SubTitle 2')).toBeInTheDocument();
+    expect(screen.getByText('Content 1')).toBeInTheDocument();
+    expect(screen.getByText('Content 2')).toBeInTheDocument();
+    expect(screen.getByText('Example Link')).toBeInTheDocument();
   });
 });

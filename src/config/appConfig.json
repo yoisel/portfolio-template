@@ -1,91 +1,275 @@
 {
-  "title": "Jane Snow's Portfolio",
-  "avatarImage": "Avatar",
-  "theme": "darkBlueTheme",
-  "social": {
-    "github": "https://github.com/random",
-    "linkedin": "https://www.linkedin.com/in/random/",
-    "stackoverflow": "https://stackoverflow.com/users/000000/random",
-    "facebook": "https://facebook.com/random/"
+  "en": {
+    "title": "Jane Snow's Portfolio",
+    "avatarImage": "Avatar",
+    "theme": "darkBlueTheme",
+    "social": {
+      "github": "https://github.com/random",
+      "linkedin": "https://www.linkedin.com/in/random/",
+      "stackoverflow": "https://stackoverflow.com/users/000000/random",
+      "facebook": "https://facebook.com/random/"
+    },
+    "sections": [
+      {
+        "id": "experience",
+        "title": "Work Experience",
+        "backgroundImage": "MathDark1",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "2015-Today",
+            "title": "CEO",
+            "subTitle2": "Skynet Corp",
+            "link": "https://www.skynet.com",
+            "linkText": "www.skynet.com",
+            "contents": [
+              "Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.",
+              "The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every \"superstar,\" every \"supreme leader,\" every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam."
+            ],
+            "image": "Networks"
+          },
+          {
+            "subTitle1": "2005-2010",
+            "title": "Lecturer, Large Language Models course",
+            "subTitle2": "Stelvia University",
+            "contents": "We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.",
+            "image": "Signals",
+            "imagePosition": "right"
+          },
+          {
+            "subTitle1": "2000-2005",
+            "title": "Teaching Assistant",
+            "subTitle2": "Stelvia University",
+            "contents": "In the last 24 hours we have seen facilities now being created for the greatest and most complex exploration in man's history. We have felt the ground shake and the air shattered by the testing of a Saturn C-1 booster rocket, many times as powerful as the Atlas which launched John Glenn, generating power equivalent to 10,000 automobiles with their accelerators on the floor. We have seen the site where the F-1 rocket engines, each one as powerful as all eight engines of the Saturn combined, will be clustered together to make the advanced Saturn missile, assembled in a new building to be built at Cape Canaveral as tall as a 48 story structure, as wide as a city block, and as long as two lengths of this field.",
+            "image": "Education"
+          }
+        ]
+      },
+      {
+        "id": "education",
+        "title": "Education",
+        "backgroundImage": "Universe",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "2005-2006",
+            "title": "Stelvia University",
+            "subTitle2": "Master in Applied Computer Science",
+            "contents": "We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.",
+            "image": "Education"
+          },
+          {
+            "subTitle1": "2001-2004",
+            "title": "Cosmic University",
+            "subTitle2": "Bachalor in Computer Science",
+            "contents": "There is no strife, no prejudice, no national conflict in outer space as yet. Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation many never come again. But why, some say, the moon? Why choose this as our goal? And they may well ask why climb the highest mountain? Why, 35 years ago, fly the Atlantic? Why does Rice play Texas?",
+            "image": "Education",
+            "imagePosition": "right"
+          }
+        ]
+      },
+      {
+        "id": "projects",
+        "title": "Projects",
+        "description": "Here are some of my projects",
+        "backgroundImage": "SignalsDark",
+        "portfolioPageItems": [
+          {
+            "title": "Project 1",
+            "subTitle2": "Cloud System",
+            "contents": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            "image": "Signals"
+          },
+          {
+            "subTitle1": "2001-2004",
+            "title": "Project 2",
+            "subTitle2": "Video Streaming System",
+            "contents": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "image": "Music",
+            "imagePosition": "right"
+          }
+        ]
+      }
+    ]
   },
-  "sections": [
-    {
-      "id": "experience",
-      "title": "Work Experience",
-      "backgroundImage": "MathDark1",
-      "portfolioPageItems": [
-        {
-          "subTitle1": "2015-Today",
-          "title": "CEO",
-          "subTitle2": "Skynet Corp",
-          "link": "https://www.skynet.com",
-          "linkText": "www.skynet.com",
-          "contents": [
-            "Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.",
-            "The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every \"superstar,\" every \"supreme leader,\" every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam."
-          ],
-          "image": "Networks"
-        },
-        {
-          "subTitle1": "2005-2010",
-          "title": "Lecturer, Large Language Models course",
-          "subTitle2": "Stelvia University",
-          "contents": "We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.",
-          "image": "Signals",
-          "imagePosition": "right"
-        },
-        {
-          "subTitle1": "2000-2005",
-          "title": "Teaching Assistant",
-          "subTitle2": "Stelvia University",
-          "contents": "In the last 24 hours we have seen facilities now being created for the greatest and most complex exploration in man's history. We have felt the ground shake and the air shattered by the testing of a Saturn C-1 booster rocket, many times as powerful as the Atlas which launched John Glenn, generating power equivalent to 10,000 automobiles with their accelerators on the floor. We have seen the site where the F-1 rocket engines, each one as powerful as all eight engines of the Saturn combined, will be clustered together to make the advanced Saturn missile, assembled in a new building to be built at Cape Canaveral as tall as a 48 story structure, as wide as a city block, and as long as two lengths of this field.",
-          "image": "Education"
-        }
-      ]
+  "es": {
+    "title": "Portafolio de Jane Snow",
+    "avatarImage": "Avatar",
+    "theme": "darkBlueTheme",
+    "social": {
+      "github": "https://github.com/random",
+      "linkedin": "https://www.linkedin.com/in/random/",
+      "stackoverflow": "https://stackoverflow.com/users/000000/random",
+      "facebook": "https://facebook.com/random/"
     },
-    {
-      "id": "education",
-      "title": "Education",
-      "backgroundImage": "Universe",
-      "portfolioPageItems": [
-        {
-          "subTitle1": "2005-2006",
-          "title": "Stelvia University",
-          "subTitle2": "Master in Applied Computer Science",
-          "contents": "We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.",
-          "image": "Education"
-        },
-        {
-          "subTitle1": "2001-2004",
-          "title": "Cosmic University",
-          "subTitle2": "Bachalor in Computer Science",
-          "contents": "There is no strife, no prejudice, no national conflict in outer space as yet. Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation many never come again. But why, some say, the moon? Why choose this as our goal? And they may well ask why climb the highest mountain? Why, 35 years ago, fly the Atlantic? Why does Rice play Texas?",
-          "image": "Education",
-          "imagePosition": "right"
-        }
-      ]
+    "sections": [
+      {
+        "id": "experience",
+        "title": "Experiencia Laboral",
+        "backgroundImage": "MathDark1",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "2015-Hoy",
+            "title": "CEO",
+            "subTitle2": "Skynet Corp",
+            "link": "https://www.skynet.com",
+            "linkText": "www.skynet.com",
+            "contents": [
+              "Mira de nuevo ese punto. Ese es aquí. Ese es el hogar. Ese somos nosotros. En él, todos los que amas, todos los que conoces, todos los que alguna vez escuchaste, cada ser humano que alguna vez existió, vivió sus vidas.",
+              "La suma de nuestra alegría y sufrimiento, miles de religiones seguras de sí mismas, ideologías y doctrinas económicas, cada cazador y recolector, cada héroe y cobarde, cada creador y destructor de civilización, cada rey y campesino, cada joven pareja enamorada, cada madre y padre, niño esperanzado, inventor y explorador, cada maestro de moral, cada político corrupto, cada 'superestrella', cada 'líder supremo', cada santo y pecador en la historia de nuestra especie vivió allí—en una mota de polvo suspendida en un rayo de sol."
+            ],
+            "image": "Networks"
+          },
+          {
+            "subTitle1": "2005-2010",
+            "title": "Profesor, curso de Modelos de Lenguaje",
+            "subTitle2": "Universidad Stelvia",
+            "contents": "Elegimos ir a la luna. Elegimos ir a la luna en esta década y hacer las otras cosas, no porque sean fáciles, sino porque son difíciles, porque ese objetivo servirá para organizar y medir lo mejor de nuestras energías y habilidades, porque ese desafío es uno que estamos dispuestos a aceptar, uno que no estamos dispuestos a posponer, y uno que pretendemos ganar, y los demás también.",
+            "image": "Signals",
+            "imagePosition": "right"
+          },
+          {
+            "subTitle1": "2000-2005",
+            "title": "Asistente de Enseñanza",
+            "subTitle2": "Universidad Stelvia",
+            "contents": "En las últimas 24 horas hemos visto instalaciones que ahora se están creando para la mayor y más compleja exploración en la historia del hombre. Hemos sentido el suelo temblar y el aire romperse por la prueba de un cohete Saturn C-1, muchas veces más potente que el Atlas que lanzó a John Glenn, generando una potencia equivalente a 10,000 automóviles con sus aceleradores a fondo. Hemos visto el sitio donde los motores de cohete F-1, cada uno tan potente como los ocho motores del Saturn juntos, se agruparán para formar el avanzado misil Saturn, ensamblado en un nuevo edificio que se construirá en Cabo Cañaveral tan alto como una estructura de 48 pisos, tan ancho como una manzana de ciudad y tan largo como dos veces este campo.",
+            "image": "Education"
+          }
+        ]
+      },
+      {
+        "id": "education",
+        "title": "Educación",
+        "backgroundImage": "Universe",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "2005-2006",
+            "title": "Universidad Stelvia",
+            "subTitle2": "Máster en Ciencias de la Computación Aplicada",
+            "contents": "Elegimos ir a la luna. Elegimos ir a la luna en esta década y hacer las otras cosas, no porque sean fáciles, sino porque son difíciles, porque ese objetivo servirá para organizar y medir lo mejor de nuestras energías y habilidades, porque ese desafío es uno que estamos dispuestos a aceptar, uno que no estamos dispuestos a posponer, y uno que pretendemos ganar, y los demás también.",
+            "image": "Education"
+          },
+          {
+            "subTitle1": "2001-2004",
+            "title": "Universidad Cósmica",
+            "subTitle2": "Licenciatura en Ciencias de la Computación",
+            "contents": "No hay lucha, no hay prejuicio, no hay conflicto nacional en el espacio exterior todavía. Sus peligros son hostiles para todos nosotros. Su conquista merece lo mejor de toda la humanidad, y su oportunidad para la cooperación pacífica puede que nunca vuelva. Pero, ¿por qué, dicen algunos, la luna? ¿Por qué elegir esto como nuestro objetivo? Y bien pueden preguntar, ¿por qué escalar la montaña más alta? ¿Por qué, hace 35 años, volar el Atlántico? ¿Por qué juega Rice contra Texas?",
+            "image": "Education",
+            "imagePosition": "right"
+          }
+        ]
+      },
+      {
+        "id": "projects",
+        "title": "Proyectos",
+        "description": "Aquí están algunos de mis proyectos",
+        "backgroundImage": "SignalsDark",
+        "portfolioPageItems": [
+          {
+            "title": "Proyecto 1",
+            "subTitle2": "Sistema en la Nube",
+            "contents": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            "image": "Signals"
+          },
+          {
+            "subTitle1": "2001-2004",
+            "title": "Proyecto 2",
+            "subTitle2": "Sistema de Video Streaming",
+            "contents": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "image": "Music",
+            "imagePosition": "right"
+          }
+        ]
+      }
+    ]
+  },
+  "fr": {
+    "title": "Portfolio de Jane Snow",
+    "avatarImage": "Avatar",
+    "theme": "darkBlueTheme",
+    "social": {
+      "github": "https://github.com/random",
+      "linkedin": "https://www.linkedin.com/in/random/",
+      "stackoverflow": "https://stackoverflow.com/users/000000/random",
+      "facebook": "https://facebook.com/random/"
     },
-    {
-      "id": "projects",
-      "title": "Projects",
-      "description": "Here are some of my projects",
-      "backgroundImage": "SignalsDark",
-      "portfolioPageItems": [
-        {
-          "title": "Project 1",
-          "subTitle2": "Cloud System",
-          "contents": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-          "image": "Signals"
-        },
-        {
-          "subTitle1": "2001-2004",
-          "title": "Project 2",
-          "subTitle2": "Video Streaming System",
-          "contents": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "image": "Music",
-          "imagePosition": "right"
-        }
-      ]
-    }
-  ]
+    "sections": [
+      {
+        "id": "experience",
+        "title": "Expérience Professionnelle",
+        "backgroundImage": "MathDark1",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "2015-Aujourd'hui",
+            "title": "PDG",
+            "subTitle2": "Skynet Corp",
+            "link": "https://www.skynet.com",
+            "linkText": "www.skynet.com",
+            "contents": [
+              "Regardez encore ce point. C'est ici. C'est la maison. C'est nous. Sur lui, tous ceux que vous aimez, tous ceux que vous connaissez, tous ceux dont vous avez entendu parler, chaque être humain qui ait jamais existé, a vécu sa vie.",
+              "La somme de notre joie et de notre souffrance, des milliers de religions confiantes, d'idéologies et de doctrines économiques, chaque chasseur et cueilleur, chaque héros et lâche, chaque créateur et destructeur de civilisation, chaque roi et paysan, chaque jeune couple amoureux, chaque mère et père, enfant plein d'espoir, inventeur et explorateur, chaque enseignant de morale, chaque politicien corrompu, chaque 'superstar', chaque 'chef suprême', chaque saint et pécheur de l'histoire de notre espèce a vécu là—sur une poussière suspendue dans un rayon de soleil."
+            ],
+            "image": "Networks"
+          },
+          {
+            "subTitle1": "2005-2010",
+            "title": "Maître de conférences, cours sur les grands modèles de langage",
+            "subTitle2": "Université Stelvia",
+            "contents": "Nous choisissons d'aller sur la lune. Nous choisissons d'aller sur la lune dans cette décennie et de faire les autres choses, non pas parce qu'elles sont faciles, mais parce qu'elles sont difficiles, parce que cet objectif servira à organiser et à mesurer le meilleur de nos énergies et de nos compétences, parce que ce défi est un que nous sommes prêts à accepter, un que nous ne sommes pas prêts à reporter, et un que nous avons l'intention de gagner, et les autres aussi.",
+            "image": "Signals",
+            "imagePosition": "right"
+          },
+          {
+            "subTitle1": "2000-2005",
+            "title": "Assistant d'enseignement",
+            "subTitle2": "Université Stelvia",
+            "contents": "Au cours des dernières 24 heures, nous avons vu des installations en cours de création pour la plus grande et la plus complexe exploration de l'histoire de l'homme. Nous avons senti le sol trembler et l'air être brisé par le test d'une fusée Saturn C-1, bien plus puissante que l'Atlas qui a lancé John Glenn, générant une puissance équivalente à 10 000 automobiles avec leurs accélérateurs à fond. Nous avons vu le site où les moteurs de fusée F-1, chacun aussi puissant que les huit moteurs du Saturn réunis, seront regroupés pour former le missile Saturn avancé, assemblé dans un nouveau bâtiment à construire à Cap Canaveral aussi haut qu'une structure de 48 étages, aussi large qu'un pâté de maisons et aussi long que deux fois ce terrain.",
+            "image": "Education"
+          }
+        ]
+      },
+      {
+        "id": "education",
+        "title": "Éducation",
+        "backgroundImage": "Universe",
+        "portfolioPageItems": [
+          {
+            "subTitle1": "2005-2006",
+            "title": "Université Stelvia",
+            "subTitle2": "Master en Informatique Appliquée",
+            "contents": "Nous choisissons d'aller sur la lune. Nous choisissons d'aller sur la lune dans cette décennie et de faire les autres choses, non pas parce qu'elles sont faciles, mais parce qu'elles sont difficiles, parce que cet objectif servira à organiser et à mesurer le meilleur de nos énergies et de nos compétences, parce que ce défi est un que nous sommes prêts à accepter, un que nous ne sommes pas prêts à reporter, et un que nous avons l'intention de gagner, et les autres aussi.",
+            "image": "Education"
+          },
+          {
+            "subTitle1": "2001-2004",
+            "title": "Université Cosmique",
+            "subTitle2": "Licence en Informatique",
+            "contents": "Il n'y a pas de conflit, pas de préjugé, pas de conflit national dans l'espace extra-atmosphérique pour l'instant. Ses dangers sont hostiles à nous tous. Sa conquête mérite le meilleur de toute l'humanité, et son opportunité de coopération pacifique ne se représentera peut-être jamais. Mais pourquoi, disent certains, la lune ? Pourquoi choisir cela comme notre objectif ? Et ils peuvent bien demander pourquoi gravir la plus haute montagne ? Pourquoi, il y a 35 ans, traverser l'Atlantique ? Pourquoi Rice joue-t-il contre Texas ?",
+            "image": "Education",
+            "imagePosition": "right"
+          }
+        ]
+      },
+      {
+        "id": "projects",
+        "title": "Projets",
+        "description": "Voici quelques-uns de mes projets",
+        "backgroundImage": "SignalsDark",
+        "portfolioPageItems": [
+          {
+            "title": "Projet 1",
+            "subTitle2": "Système Cloud",
+            "contents": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            "image": "Signals"
+          },
+          {
+            "subTitle1": "2001-2004",
+            "title": "Projet 2",
+            "subTitle2": "Système de Streaming Vidéo",
+            "contents": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "image": "Music",
+            "imagePosition": "right"
+          }
+        ]
+      }
+    ]
+  }
 }

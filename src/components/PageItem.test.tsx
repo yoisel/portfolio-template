@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { PageItem } from './PageItem';
 import { PortfolioPageItem } from '../model/AppData.interface';
 
@@ -13,9 +13,9 @@ const mockData: PortfolioPageItem = {
 };
 
 test('renders PageItem component', () => {
-  const { getByText } = render(<PageItem {...mockData} />);
-  expect(getByText('Item Title')).toBeInTheDocument();
-  expect(getByText('Item Subtitle 1')).toBeInTheDocument();
-  expect(getByText('Item Subtitle 2')).toBeInTheDocument();
-  expect(getByText('Example Link')).toBeInTheDocument();
+  render(<PageItem {...mockData} />);
+  expect(screen.getByText('Item Title')).toBeInTheDocument();
+  expect(screen.getByText('Item Subtitle 1')).toBeInTheDocument();
+  expect(screen.getByText('Item Subtitle 2')).toBeInTheDocument();
+  expect(screen.getByText('Example Link')).toBeInTheDocument();
 });

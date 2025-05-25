@@ -51,15 +51,19 @@ export const PageItem = ({
     <>
       {image ? (
         <>
-          {imagePosition === 'left' && image && <Grid item xs={12} md={4} {...styles}>
-            <SideImage backgroundImage={image} backgroundColor={backgroundColor} />
-          </Grid>}
+          {imagePosition === 'left' && image && (
+            <Grid item xs={12} md={4} {...styles}>
+              <SideImage backgroundImage={image} backgroundColor={backgroundColor} />
+            </Grid>
+          )}
           <Grid item xs={12} md={8} {...styles}>
             {textContents}
           </Grid>
-          {imagePosition === 'right' && image && <Grid item xs={12} md={4} {...styles}>
-            <SideImage backgroundImage={image} backgroundColor={backgroundColor} />
-          </Grid>}
+          {imagePosition === 'right' && image && (
+            <Grid item xs={12} md={4} {...styles}>
+              <SideImage backgroundImage={image} backgroundColor={backgroundColor} />
+            </Grid>
+          )}
         </>
       ) : (
         <Grid item xs={12} md={12} {...styles}>

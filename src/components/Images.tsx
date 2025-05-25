@@ -12,15 +12,15 @@ import avatar from '../assets/woman-face-cartoon.jpg';
 
 const _Images = {
   MathDark2: mathDark2,
-   MathDark1: mathDark1,
-   Music: music,
-   Education: education,
-   Math: math,
-   Networks: networks,
-   Signals: signals,
-   SignalsDark: signalsDark,
-   Universe: universe,
-   Avatar: avatar
-}
+  MathDark1: mathDark1,
+  Music: music,
+  Education: education,
+  Math: math,
+  Networks: networks,
+  Signals: signals,
+  SignalsDark: signalsDark,
+  Universe: universe,
+  Avatar: avatar
+};
 
 export const Images: { [key: string]: string } & typeof _Images = _Images;

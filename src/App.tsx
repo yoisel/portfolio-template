@@ -4,22 +4,28 @@ import { useEffect, useLayoutEffect, useState } from 'react';
 import { AppHeader } from './components/AppHeader';
 import { AppContents } from './components/AppContents';
 import { darkBlueTheme } from './themes/dark-blue';
-import { AppConfig } from './model/AppData.interface';
-import { parseAppConfig } from './model/AppData';
+
+import { MultiLangAppConfig } from './model/AppData.interface';
 import appConfigJson from './config/appConfig.json';
 
 const theme = createTheme(darkBlueTheme);
 
+const LANGUAGES = [
+  { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'fr', label: 'Français', flag: '🇫🇷' }
+];
+
 const App = () => {
-  const [appConfig, setAppConfig] = useState<AppConfig | null>(null);
+  const [multiLangConfig, setMultiLangConfig] = useState<MultiLangAppConfig | null>(null);
+  const [lang, setLang] = useState('en');
 
   useEffect(() => {
-    const fetchConfig = async () => {
-      const config = await parseAppConfig(appConfigJson);
-      setAppConfig(config);
-    };
-    fetchConfig();
+    // No need to parse, just set as MultiLangAppConfig
+    setMultiLangConfig(appConfigJson as MultiLangAppConfig);
   }, []);
+
+  const appConfig = multiLangConfig?.[lang];
 
   useLayoutEffect(() => {
     const docTitle = document.getElementById('app-title');
@@ -35,7 +41,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppHeader {...appConfig} />
+      <AppHeader {...appConfig} lang={lang} setLang={setLang} languages={LANGUAGES} />
       <AppContents {...appConfig} />
     </ThemeProvider>
   );

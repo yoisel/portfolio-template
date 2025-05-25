@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { AppContents } from './AppContents';
 
 describe('AppContents', () => {
@@ -28,14 +28,14 @@ describe('AppContents', () => {
   };
 
   it('renders sections and portfolio pages', () => {
-    const { getByText }: RenderResult = render(<AppContents {...props} />);
-    expect(getByText('Section 1')).toBeInTheDocument();
-    expect(getByText('Description 1')).toBeInTheDocument();
-    expect(getByText('Item 1')).toBeInTheDocument();
-    expect(getByText('SubTitle 1')).toBeInTheDocument();
-    expect(getByText('SubTitle 2')).toBeInTheDocument();
-    expect(getByText('Content 1')).toBeInTheDocument();
-    expect(getByText('Content 2')).toBeInTheDocument();
-    expect(getByText('Example Link')).toBeInTheDocument();
+    render(<AppContents {...props} />);
+    expect(screen.getByText('Section 1')).toBeInTheDocument();
+    expect(screen.getByText('Description 1')).toBeInTheDocument();
+    expect(screen.getByText('Item 1')).toBeInTheDocument();
+    expect(screen.getByText('SubTitle 1')).toBeInTheDocument();
+    expect(screen.getByText('SubTitle 2')).toBeInTheDocument();
+    expect(screen.getByText('Content 1')).toBeInTheDocument();
+    expect(screen.getByText('Content 2')).toBeInTheDocument();
+    expect(screen.getByText('Example Link')).toBeInTheDocument();
   });
 });

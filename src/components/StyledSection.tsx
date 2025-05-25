@@ -12,7 +12,9 @@ export const StyledSection = styled(Grid, {
   paddingBottom: '48px',
   backgroundSize: 'cover',
   /* making the background image opaque without affecting the rest of the contents */
-  background: backgroundImage ? `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(${backgroundImage})` : undefined,
+  background: backgroundImage
+    ? `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(${backgroundImage})`
+    : undefined,
   /* required to account for our sticky header when scrolling */
   scrollMarginTop: '64px'
 }));

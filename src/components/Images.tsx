@@ -10,20 +10,17 @@ import education from '../assets/ai-generated/education.jpg';
 
 import avatar from '../assets/woman-face-cartoon.jpg';
 
-// Helper function to ensure URLs have the correct public path prefix
-const withPublicUrl = (url: string) => `${process.env.PUBLIC_URL}${url}`;
-
 const _Images = {
-  MathDark2: withPublicUrl(mathDark2),
-  MathDark1: withPublicUrl(mathDark1),
-  Music: withPublicUrl(music),
-  Education: withPublicUrl(education),
-  Math: withPublicUrl(math),
-  Networks: withPublicUrl(networks),
-  Signals: withPublicUrl(signals),
-  SignalsDark: withPublicUrl(signalsDark),
-  Universe: withPublicUrl(universe),
-  Avatar: withPublicUrl(avatar)
+  MathDark2: mathDark2,
+  MathDark1: mathDark1,
+  Music: music,
+  Education: education,
+  Math: math,
+  Networks: networks,
+  Signals: signals,
+  SignalsDark: signalsDark,
+  Universe: universe,
+  Avatar: avatar
 };
 
 export const Images: { [key: string]: string } & typeof _Images = _Images;

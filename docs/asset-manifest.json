@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio-template/static/css/main.b02f0842.css",
-    "main.js": "/portfolio-template/static/js/main.12cd126f.js",
+    "main.js": "/portfolio-template/static/js/main.d6a10d00.js",
     "static/js/787.fbf0fd7a.chunk.js": "/portfolio-template/static/js/787.fbf0fd7a.chunk.js",
-    "static/js/main.12cd126f.js.map": "/portfolio-template/static/js/main.12cd126f.js.map",
+    "static/js/main.d6a10d00.js.map": "/portfolio-template/static/js/main.d6a10d00.js.map",
     "index.html": "/portfolio-template/index.html",
     "static/media/github.svg": "/portfolio-template/static/media/github.b28a8031836582cfd590ce509b0f3e98.svg",
     "static/media/stackoverflow.svg": "/portfolio-template/static/media/stackoverflow.9e5b305d11ae78cca34779aaa6109ffd.svg",
     "static/media/linkedin.svg": "/portfolio-template/static/media/linkedin.038e9d46b9880004e87539bcae1ef824.svg",
-    "static/js/main.12cd126f.js.LICENSE.txt": "/portfolio-template/static/js/main.12cd126f.js.LICENSE.txt",
+    "static/js/main.d6a10d00.js.LICENSE.txt": "/portfolio-template/static/js/main.d6a10d00.js.LICENSE.txt",
     "static/media/instagram.svg": "/portfolio-template/static/media/instagram.5057f2b1fdb8cb222353bc9cfeda53fa.svg",
     "static/media/facebook.svg": "/portfolio-template/static/media/facebook.4ba0f48b291b567921670ccc467e077c.svg",
     "static/css/main.b02f0842.css.map": "/portfolio-template/static/css/main.b02f0842.css.map",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.b02f0842.css",
-    "static/js/main.12cd126f.js"
+    "static/js/main.d6a10d00.js"
   ]
 }

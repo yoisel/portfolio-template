@@ -10,7 +10,7 @@ export const SideImage = styled(Box, {
   height: '300px',
   backgroundSize: 'contain',
   backgroundRepeat: 'no-repeat',
-  backgroundImage: backgroundImage ? `url(${process.env.PUBLIC_URL}${backgroundImage})` : undefined,
+  backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
   backgroundColor: `${backgroundColor}`,
   backgroundPosition: 'center'
 }));

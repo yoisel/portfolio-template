@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.b02f0842.css",
-    "main.js": "./static/js/main.e8f696fc.js",
+    "main.js": "./static/js/main.bd38f359.js",
     "static/js/787.fbf0fd7a.chunk.js": "./static/js/787.fbf0fd7a.chunk.js",
     "static/media/radiosys.bmp": "./static/media/radiosys.1c63bb91bd543a8d10cd.bmp",
-    "static/js/main.e8f696fc.js.map": "./static/js/main.e8f696fc.js.map",
+    "static/js/main.bd38f359.js.map": "./static/js/main.bd38f359.js.map",
     "static/media/portfolio-template.png": "./static/media/portfolio-template.a018fc883dba85cf9b6c.png",
+    "index.html": "./index.html",
     "static/media/math.jpg": "./static/media/math.503695ab26291e9e81b6.jpg",
     "static/media/signals-dark.jpg": "./static/media/signals-dark.7fcb905bbe7834e77ecc.jpg",
     "static/media/math-dark-1.jpg": "./static/media/math-dark-1.bcce2dcf1ad5bbd039af.jpg",
     "static/media/aruba-cnx.png": "./static/media/aruba-cnx.a60759c3898b654d74b6.png",
-    "index.html": "./index.html",
     "static/media/math-dark-2.jpg": "./static/media/math-dark-2.50caa0dbcf2a2ed14f92.jpg",
     "static/media/signals.jpg": "./static/media/signals.5d9241602f8a9448f54a.jpg",
     "static/media/aruba-os.png": "./static/media/aruba-os.49ed7d06afed999d26be.png",
@@ -33,7 +33,7 @@
     "static/media/github.svg": "./static/media/github.b28a8031836582cfd590ce509b0f3e98.svg",
     "static/media/stackoverflow.svg": "./static/media/stackoverflow.9e5b305d11ae78cca34779aaa6109ffd.svg",
     "static/media/linkedin.svg": "./static/media/linkedin.038e9d46b9880004e87539bcae1ef824.svg",
-    "static/js/main.e8f696fc.js.LICENSE.txt": "./static/js/main.e8f696fc.js.LICENSE.txt",
+    "static/js/main.bd38f359.js.LICENSE.txt": "./static/js/main.bd38f359.js.LICENSE.txt",
     "static/media/instagram.svg": "./static/media/instagram.5057f2b1fdb8cb222353bc9cfeda53fa.svg",
     "static/media/facebook.svg": "./static/media/facebook.4ba0f48b291b567921670ccc467e077c.svg",
     "static/css/main.b02f0842.css.map": "./static/css/main.b02f0842.css.map",
@@ -41,6 +41,6 @@
   },
   "entrypoints": [
     "static/css/main.b02f0842.css",
-    "static/js/main.e8f696fc.js"
+    "static/js/main.bd38f359.js"
   ]
 }

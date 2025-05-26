@@ -5,15 +5,15 @@ import { grayscaleTheme } from './themes/grayscale';
 import { AppHeader } from './components/AppHeader';
 import { AppContents } from './components/AppContents';
 
-import { MultiLangAppConfig } from './model/AppData.interface';
+import { MultiLangAppConfig, LanguageOption } from './model/AppData.interface';
 import appConfigJson from './config/appConfig.json';
 
 const theme = createTheme(grayscaleTheme);
 
-const LANGUAGES = [
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'es', label: 'Español', flag: '🇪🇸' },
-  { code: 'fr', label: 'Français', flag: '🇫🇷' }
+const LANGUAGES: LanguageOption[] = [
+  { code: 'en', label: 'English', flag: 'GB' },
+  { code: 'es', label: 'Español', flag: 'ES' },
+  { code: 'fr', label: 'Français', flag: 'FR' }
 ];
 
 const App = () => {

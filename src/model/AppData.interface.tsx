@@ -1,4 +1,5 @@
 import { ThemeOptions } from '@mui/material';
+import * as Flags from 'country-flag-icons/react/3x2';
 
 export interface PortfolioPageItem {
   image?: string;
@@ -44,10 +45,12 @@ export interface SocialLinks {
   instagram?: string;
 }
 
+type CountryCode = keyof typeof Flags;
+
 export interface LanguageOption {
   code: string;
   label: string;
-  flag: string;
+  flag: CountryCode;
 }
 
 export interface AppHeaderConfig {

@@ -15,6 +15,10 @@ import { SocialIcons } from './SocialIcons';
 import { AppHeaderConfig, LanguageOption } from '../model/AppData.interface';
 import React, { useState } from 'react';
 import { Images } from './Images';
+import * as Flags from 'country-flag-icons/react/3x2';
+
+type FlagComponents = typeof Flags;
+type CountryCode = keyof FlagComponents;
 
 export const AppHeader = (props: AppHeaderConfig) => {
   // Language dropdown state
@@ -66,12 +70,22 @@ export const AppHeader = (props: AppHeaderConfig) => {
               style={{ fontSize: 24, minWidth: 40 }}
               title='Change language'
             >
-              {props.languages.find((l) => l.code === props.lang)?.flag || '🌐'}
+              {(() => {
+                const currentFlag = props.languages.find((l) => l.code === props.lang)?.flag as CountryCode;
+                const FlagComponent = currentFlag ? Flags[currentFlag] : null;
+                return FlagComponent ? <FlagComponent style={{ width: '24px', height: '24px' }} /> : '🌐';
+              })()}
             </Button>
             <Menu id='lang-menu' anchorEl={langMenuAnchor} open={!!langMenuAnchor} onClose={handleLangMenuClose}>
               {props.languages.map((l: LanguageOption) => (
                 <MenuItem key={l.code} selected={l.code === props.lang} onClick={() => handleLangSelect(l.code)}>
-                  <span style={{ fontSize: 22, marginRight: 8 }}>{l.flag}</span> {l.label}
+                  {(() => {
+                    const FlagComponent = Flags[l.flag as CountryCode];
+                    return FlagComponent ? (
+                      <FlagComponent style={{ width: '22px', height: '22px', marginRight: '8px' }} />
+                    ) : null;
+                  })()}{' '}
+                  {l.label}
                 </MenuItem>
               ))}
             </Menu>
